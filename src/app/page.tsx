@@ -41,7 +41,6 @@ export default function Home() {
                 Get Your Furry Family <br className="hidden sm:inline" />
                 Member <span className="text-brand-primary font-bold">Groomed Today</span>
               </h1>
-            </div>
 
             <p className="text-sm md:text-base text-brand-dark-muted leading-relaxed max-w-xl">
               Experience the ultimate cage-free sanctuary for your pet. At **Bark & Bathe Lounge**, we replace stress and anxiety with calming lavender aromatherapy, whisper-quiet machinery, and 100% organic botanical spa treatments.
