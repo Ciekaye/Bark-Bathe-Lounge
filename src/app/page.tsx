@@ -10,9 +10,22 @@ export default function Home() {
     <div className="space-y-24 md:space-y-32">
       {/* 1. Hero Section */}
       <section className="relative overflow-hidden px-4 md:px-8 max-w-7xl mx-auto pt-8 md:pt-16 pb-6">
-        {/* Floating Background Elements */}
-        <div className="absolute top-1/4 left-5 text-brand-primary/5 select-none pointer-events-none -z-20">
-          <svg viewBox="0 0 24 24" fill="currentColor" className="w-24 h-24 rotate-12">
+        {/* Floating and Repeating Background Paw Pattern */}
+        <div 
+          className="absolute inset-0 opacity-[0.035] select-none pointer-events-none -z-20"
+          style={{
+            backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 100 100'%3E%3Cg fill='%232D5A47'%3E%3Cpath d='M12 13c1.66 0 3-1.34 3-3S13.66 7 12 7s-3 1.34-3 3 1.34 3 3 3zm-3.5-3c.83 0 1.5-.67 1.5-1.5S9.33 7 8.5 7 7 7.67 7 8.5 7.67 10 8.5 10zm7 0c.83 0 1.5-.67 1.5-1.5S16.33 7 15.5 7s-1.5.67-1.5 1.5.67 1.5 1.5 1.5zm-10 4.5c.83 0 1.5-.67 1.5-1.5S6.33 10 5.5 10s-1.5.67-1.5 1.5.67 1.5 1.5 1.5zm13 0c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5-1.5.67-1.5 1.5.67 1.5 1.5 1.5z' transform='translate(10,10) scale(1.6)'/%3E%3Cpath d='M12 13c1.66 0 3-1.34 3-3S13.66 7 12 7s-3 1.34-3 3 1.34 3 3 3zm-3.5-3c.83 0 1.5-.67 1.5-1.5S9.33 7 8.5 7 7 7.67 7 8.5 7.67 10 8.5 10zm7 0c.83 0 1.5-.67 1.5-1.5S16.33 7 15.5 7s-1.5.67-1.5 1.5.67 1.5 1.5 1.5zm-10 4.5c.83 0 1.5-.67 1.5-1.5S6.33 10 5.5 10s-1.5.67-1.5 1.5.67 1.5 1.5 1.5zm13 0c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5-1.5.67-1.5 1.5.67 1.5 1.5 1.5z' transform='translate(50,50) scale(1.2) rotate(25, 12, 12)'/%3E%3C/g%3E%3C/svg%3E")`,
+            backgroundSize: '120px 120px'
+          }}
+        />
+        {/* Large accent floating paw prints */}
+        <div className="absolute top-12 left-8 text-brand-primary/5 select-none pointer-events-none -z-20 animate-pulse duration-[5000ms]">
+          <svg viewBox="0 0 24 24" fill="currentColor" className="w-20 h-20 rotate-12">
+            <path d="M12 14c1.66 0 3-1.34 3-3S13.66 8 12 8s-3 1.34-3 3 1.34 3 3 3zm-4.5-3c.83 0 1.5-.67 1.5-1.5S8.33 8 7.5 8 6 8.67 6 9.5 6.67 11 7.5 11zm9 0c.83 0 1.5-.67 1.5-1.5S17.33 8 16.5 8s-1.5.67-1.5 1.5.67 1.5 1.5 1.5zm-11 4.5c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5-1.5.67-1.5 1.5.67 1.5 1.5 1.5zm13 0c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5-1.5.67-1.5 1.5.67 1.5 1.5 1.5z" />
+          </svg>
+        </div>
+        <div className="absolute bottom-6 left-1/3 text-brand-primary/5 select-none pointer-events-none -z-20 rotate-45 animate-pulse duration-[8000ms]">
+          <svg viewBox="0 0 24 24" fill="currentColor" className="w-16 h-16">
             <path d="M12 14c1.66 0 3-1.34 3-3S13.66 8 12 8s-3 1.34-3 3 1.34 3 3 3zm-4.5-3c.83 0 1.5-.67 1.5-1.5S8.33 8 7.5 8 6 8.67 6 9.5 6.67 11 7.5 11zm9 0c.83 0 1.5-.67 1.5-1.5S17.33 8 16.5 8s-1.5.67-1.5 1.5.67 1.5 1.5 1.5zm-11 4.5c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5-1.5.67-1.5 1.5.67 1.5 1.5 1.5zm13 0c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5-1.5.67-1.5 1.5.67 1.5 1.5 1.5z" />
           </svg>
         </div>
