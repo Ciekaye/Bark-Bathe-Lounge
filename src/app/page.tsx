@@ -9,44 +9,33 @@ export default function Home() {
   return (
     <div className="space-y-24 md:space-y-32">
       {/* 1. Hero Section */}
-      <section className="relative overflow-hidden px-4 md:px-8 max-w-7xl mx-auto pt-8 md:pt-16 pb-6">
+      <section className="relative overflow-hidden w-full bg-white pt-8 md:pt-16 pb-6">
         {/* Floating and Repeating Background Paw Pattern */}
         <div 
-          className="absolute inset-0 opacity-[0.08] select-none pointer-events-none -z-20"
+          className="absolute inset-0 opacity-[0.02] select-none pointer-events-none -z-20"
           style={{
             backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 100 100'%3E%3Cg fill='%232D5A47'%3E%3Cpath d='M 5.5 9.7 A 1.8 1.8 0 1 0 5.5 13.3 A 1.8 1.8 0 1 0 5.5 9.7 Z M 9.5 6.2 A 1.8 1.8 0 1 0 9.5 9.8 A 1.8 1.8 0 1 0 9.5 6.2 Z M 14.5 6.2 A 1.8 1.8 0 1 0 14.5 9.8 A 1.8 1.8 0 1 0 14.5 6.2 Z M 18.5 9.7 A 1.8 1.8 0 1 0 18.5 13.3 A 1.8 1.8 0 1 0 18.5 9.7 Z M 12 12 C 9 12 6.5 14 6.5 17.5 C 6.5 20 8.5 21 10.5 21 C 11.5 21 12 20.5 12 20.5 C 12 20.5 12.5 21 13.5 21 C 15.5 21 17.5 20 17.5 17.5 C 17.5 14 15 12 12 12 Z' transform='translate(10,10) scale(1.6)'/%3E%3Cpath d='M 5.5 9.7 A 1.8 1.8 0 1 0 5.5 13.3 A 1.8 1.8 0 1 0 5.5 9.7 Z M 9.5 6.2 A 1.8 1.8 0 1 0 9.5 9.8 A 1.8 1.8 0 1 0 9.5 6.2 Z M 14.5 6.2 A 1.8 1.8 0 1 0 14.5 9.8 A 1.8 1.8 0 1 0 14.5 6.2 Z M 18.5 9.7 A 1.8 1.8 0 1 0 18.5 13.3 A 1.8 1.8 0 1 0 18.5 9.7 Z M 12 12 C 9 12 6.5 14 6.5 17.5 C 6.5 20 8.5 21 10.5 21 C 11.5 21 12 20.5 12 20.5 C 12 20.5 12.5 21 13.5 21 C 15.5 21 17.5 20 17.5 17.5 C 17.5 14 15 12 12 12 Z' transform='translate(50,50) scale(1.2) rotate(25, 12, 12)'/%3E%3C/g%3E%3C/svg%3E")`,
             backgroundSize: '160px 160px'
           }}
         />
-        {/* Large accent floating paw prints */}
-        <div className="absolute top-12 left-8 text-brand-primary/10 select-none pointer-events-none -z-20 animate-pulse duration-[5000ms]">
-          <svg viewBox="0 0 24 24" fill="currentColor" className="w-20 h-20 rotate-12">
-            <path d="M 5.5 9.7 A 1.8 1.8 0 1 0 5.5 13.3 A 1.8 1.8 0 1 0 5.5 9.7 Z M 9.5 6.2 A 1.8 1.8 0 1 0 9.5 9.8 A 1.8 1.8 0 1 0 9.5 6.2 Z M 14.5 6.2 A 1.8 1.8 0 1 0 14.5 9.8 A 1.8 1.8 0 1 0 14.5 6.2 Z M 18.5 9.7 A 1.8 1.8 0 1 0 18.5 13.3 A 1.8 1.8 0 1 0 18.5 9.7 Z M 12 12 C 9 12 6.5 14 6.5 17.5 C 6.5 20 8.5 21 10.5 21 C 11.5 21 12 20.5 12 20.5 C 12 20.5 12.5 21 13.5 21 C 15.5 21 17.5 20 17.5 17.5 C 17.5 14 15 12 12 12 Z" />
-          </svg>
-        </div>
-        <div className="absolute bottom-6 left-1/3 text-brand-primary/8 select-none pointer-events-none -z-20 rotate-45 animate-pulse duration-[8000ms]">
-          <svg viewBox="0 0 24 24" fill="currentColor" className="w-16 h-16">
-            <path d="M 5.5 9.7 A 1.8 1.8 0 1 0 5.5 13.3 A 1.8 1.8 0 1 0 5.5 9.7 Z M 9.5 6.2 A 1.8 1.8 0 1 0 9.5 9.8 A 1.8 1.8 0 1 0 9.5 6.2 Z M 14.5 6.2 A 1.8 1.8 0 1 0 14.5 9.8 A 1.8 1.8 0 1 0 14.5 6.2 Z M 18.5 9.7 A 1.8 1.8 0 1 0 18.5 13.3 A 1.8 1.8 0 1 0 18.5 9.7 Z M 12 12 C 9 12 6.5 14 6.5 17.5 C 6.5 20 8.5 21 10.5 21 C 11.5 21 12 20.5 12 20.5 C 12 20.5 12.5 21 13.5 21 C 15.5 21 17.5 20 17.5 17.5 C 17.5 14 15 12 12 12 Z" />
-          </svg>
-        </div>
-        
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
-          {/* Text Content */}
-          <div className="lg:col-span-7 space-y-8">
-            <div className="space-y-4 md:space-y-6">
-              {/* Kicker Tag / Badge */}
-              <div className="inline-flex items-center gap-2 rounded-full bg-brand-soft/50 border border-brand-primary/10 px-4 py-2 shadow-sm w-fit">
-                <div className="relative h-7 w-7 overflow-hidden rounded-full border border-white">
-                  <Image
-                    src="/images/badge_beagle.png"
-                    alt="Happy Beagle Badge"
-                    fill
-                    className="object-cover scale-110"
-                  />
-                </div>
-                <span className="text-[10px] font-extrabold uppercase tracking-widest text-brand-primary">Best Friend</span>
-              </div>
 
+        {/* Hero Content Wrapper */}
+        <div className="max-w-7xl mx-auto px-4 md:px-8 relative">
+          {/* Large accent floating paw prints */}
+          <div className="absolute top-12 left-8 text-brand-primary/[0.04] select-none pointer-events-none -z-20 animate-pulse duration-[5000ms]">
+            <svg viewBox="0 0 24 24" fill="currentColor" className="w-20 h-20 rotate-12">
+              <path d="M 5.5 9.7 A 1.8 1.8 0 1 0 5.5 13.3 A 1.8 1.8 0 1 0 5.5 9.7 Z M 9.5 6.2 A 1.8 1.8 0 1 0 9.5 9.8 A 1.8 1.8 0 1 0 9.5 6.2 Z M 14.5 6.2 A 1.8 1.8 0 1 0 14.5 9.8 A 1.8 1.8 0 1 0 14.5 6.2 Z M 18.5 9.7 A 1.8 1.8 0 1 0 18.5 13.3 A 1.8 1.8 0 1 0 18.5 9.7 Z M 12 12 C 9 12 6.5 14 6.5 17.5 C 6.5 20 8.5 21 10.5 21 C 11.5 21 12 20.5 12 20.5 C 12 20.5 12.5 21 13.5 21 C 15.5 21 17.5 20 17.5 17.5 C 17.5 14 15 12 12 12 Z" />
+            </svg>
+          </div>
+          <div className="absolute bottom-6 left-1/3 text-brand-primary/[0.03] select-none pointer-events-none -z-20 rotate-45 animate-pulse duration-[8000ms]">
+            <svg viewBox="0 0 24 24" fill="currentColor" className="w-16 h-16">
+              <path d="M 5.5 9.7 A 1.8 1.8 0 1 0 5.5 13.3 A 1.8 1.8 0 1 0 5.5 9.7 Z M 9.5 6.2 A 1.8 1.8 0 1 0 9.5 9.8 A 1.8 1.8 0 1 0 9.5 6.2 Z M 14.5 6.2 A 1.8 1.8 0 1 0 14.5 9.8 A 1.8 1.8 0 1 0 14.5 6.2 Z M 18.5 9.7 A 1.8 1.8 0 1 0 18.5 13.3 A 1.8 1.8 0 1 0 18.5 9.7 Z M 12 12 C 9 12 6.5 14 6.5 17.5 C 6.5 20 8.5 21 10.5 21 C 11.5 21 12 20.5 12 20.5 C 12 20.5 12.5 21 13.5 21 C 15.5 21 17.5 20 17.5 17.5 C 17.5 14 15 12 12 12 Z" />
+            </svg>
+          </div>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+            {/* Text Content */}
+            <div className="lg:col-span-7 space-y-8">
               {/* Main Heading */}
               <h1 className="font-display text-5xl sm:text-6xl md:text-7xl font-black text-brand-dark leading-[1.04] tracking-tight">
                 Get Your Furry Family <br className="hidden sm:inline" />
@@ -98,28 +87,29 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Hero Image */}
-          <div className="lg:col-span-5 relative flex justify-center items-center mt-8 lg:mt-0">
-            {/* Sleek diagonal background banner */}
-            <div className="absolute inset-y-0 -right-24 left-10 md:left-20 bg-brand-soft/30 -skew-x-6 rounded-l-[4rem] -z-10" />
-            
-            {/* Floating background decorative paw print */}
-            <div className="absolute top-10 right-10 text-brand-primary/20 opacity-60 select-none pointer-events-none animate-bounce duration-[4000ms]">
-              <svg viewBox="0 0 24 24" fill="currentColor" className="w-12 h-12">
-                <path d="M 5.5 9.7 A 1.8 1.8 0 1 0 5.5 13.3 A 1.8 1.8 0 1 0 5.5 9.7 Z M 9.5 6.2 A 1.8 1.8 0 1 0 9.5 9.8 A 1.8 1.8 0 1 0 9.5 6.2 Z M 14.5 6.2 A 1.8 1.8 0 1 0 14.5 9.8 A 1.8 1.8 0 1 0 14.5 6.2 Z M 18.5 9.7 A 1.8 1.8 0 1 0 18.5 13.3 A 1.8 1.8 0 1 0 18.5 9.7 Z M 12 12 C 9 12 6.5 14 6.5 17.5 C 6.5 20 8.5 21 10.5 21 C 11.5 21 12 20.5 12 20.5 C 12 20.5 12.5 21 13.5 21 C 15.5 21 17.5 20 17.5 17.5 C 17.5 14 15 12 12 12 Z" />
-              </svg>
-            </div>
+            {/* Hero Image */}
+            <div className="lg:col-span-5 relative flex justify-center items-center mt-8 lg:mt-0">
+              {/* Sleek diagonal background banner */}
+              <div className="absolute inset-y-0 -right-24 left-10 md:left-20 bg-brand-soft/30 -skew-x-6 rounded-l-[4rem] -z-10" />
+              
+              {/* Floating background decorative paw print */}
+              <div className="absolute top-10 right-10 text-brand-primary/20 opacity-60 select-none pointer-events-none animate-bounce duration-[4000ms]">
+                <svg viewBox="0 0 24 24" fill="currentColor" className="w-12 h-12">
+                  <path d="M 5.5 9.7 A 1.8 1.8 0 1 0 5.5 13.3 A 1.8 1.8 0 1 0 5.5 9.7 Z M 9.5 6.2 A 1.8 1.8 0 1 0 9.5 9.8 A 1.8 1.8 0 1 0 9.5 6.2 Z M 14.5 6.2 A 1.8 1.8 0 1 0 14.5 9.8 A 1.8 1.8 0 1 0 14.5 6.2 Z M 18.5 9.7 A 1.8 1.8 0 1 0 18.5 13.3 A 1.8 1.8 0 1 0 18.5 9.7 Z M 12 12 C 9 12 6.5 14 6.5 17.5 C 6.5 20 8.5 21 10.5 21 C 11.5 21 12 20.5 12 20.5 C 12 20.5 12.5 21 13.5 21 C 15.5 21 17.5 20 17.5 17.5 C 17.5 14 15 12 12 12 Z" />
+                </svg>
+              </div>
 
-            {/* Hero image container */}
-            <div className="relative w-full aspect-square md:max-w-md lg:max-w-none transition-transform duration-500 hover:scale-[1.02]">
-              <Image
-                src="/images/hero_dog_sunglasses.png"
-                alt="Beautifully groomed happy golden retriever wearing yellow sunglasses at Bark & Bathe Lounge"
-                width={600}
-                height={600}
-                priority
-                className="w-full h-auto object-contain drop-shadow-2xl rounded-2xl"
-              />
+              {/* Hero image container */}
+              <div className="relative w-full aspect-square md:max-w-md lg:max-w-none transition-transform duration-500 hover:scale-[1.02]">
+                <Image
+                  src="/images/hero_dog_sunglasses_left.png"
+                  alt="Beautifully groomed happy golden retriever wearing yellow sunglasses at Bark & Bathe Lounge"
+                  width={600}
+                  height={600}
+                  priority
+                  className="w-full h-auto object-contain drop-shadow-2xl"
+                />
+              </div>
             </div>
           </div>
         </div>
