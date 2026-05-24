@@ -46,11 +46,9 @@ export default function Team() {
     <div className="space-y-20 max-w-7xl mx-auto px-4 md:px-8">
       {/* Header Section */}
       <section className="text-center max-w-3xl mx-auto space-y-4">
-        <div className="inline-flex items-center gap-2 rounded-full bg-brand-soft/45 border border-brand-primary/10 px-4 py-1.5">
-          <Sparkles size={12} className="text-brand-primary" />
-          <span className="text-[10px] font-bold uppercase tracking-wider text-brand-primary">
-            Fear-Free Professionals
-          </span>
+        <div className="flex items-center justify-center gap-2 text-xs font-extrabold uppercase tracking-[0.2em] text-brand-primary">
+          <Sparkles size={12} />
+          <span>Fear-Free Professionals</span>
         </div>
         <h1 className="font-display text-4xl sm:text-5xl font-extrabold text-brand-dark tracking-tight leading-tight">
           Meet Our Elite <br />

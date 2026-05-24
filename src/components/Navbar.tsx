@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Scissors, Menu, X, Calendar, Sparkles } from "lucide-react";
+import Image from "next/image";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -47,18 +48,14 @@ export default function Navbar() {
         >
           <div className="flex items-center justify-between">
             {/* Brand Logo */}
-            <Link href="/" className="flex items-center gap-2 group">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-brand-primary text-brand-cream transition-transform duration-300 group-hover:rotate-12">
-                <Scissors size={18} className="stroke-[2.5]" />
-              </div>
-              <div className="flex flex-col">
-                <span className="font-display text-lg font-extrabold tracking-tight text-brand-dark">
-                  BARK & BATHE
-                </span>
-                <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-brand-secondary">
-                  Lounge
-                </span>
-              </div>
+            <Link href="/" className="flex items-center group">
+              <Image
+                src="/images/logo.png"
+                alt="Bark & Bathe Lounge Logo"
+                width={180}
+                height={50}
+                className="h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.03]"
+              />
             </Link>
 
             {/* Desktop Navigation Links */}
@@ -124,14 +121,15 @@ export default function Navbar() {
       >
         <div className="flex flex-col h-full">
           <div className="flex items-center justify-between mb-8">
-            <div className="flex items-center gap-2">
-              <div className="flex h-9 w-9 items-center justify-center rounded-full bg-brand-primary text-brand-cream">
-                <Scissors size={16} />
-              </div>
-              <span className="font-display text-base font-extrabold tracking-tight text-brand-dark">
-                BARK & BATHE
-              </span>
-            </div>
+            <Link href="/" onClick={() => setIsOpen(false)} className="flex items-center group">
+              <Image
+                src="/images/logo.png"
+                alt="Bark & Bathe Lounge Logo"
+                width={150}
+                height={42}
+                className="h-8.5 w-auto object-contain"
+              />
+            </Link>
             <button
               onClick={() => setIsOpen(false)}
               className="flex h-9 w-9 items-center justify-center rounded-full bg-brand-soft/20 text-brand-primary hover:bg-brand-soft/40"

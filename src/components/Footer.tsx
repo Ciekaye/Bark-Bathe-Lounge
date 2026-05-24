@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { Scissors, Phone, Mail, MapPin, Clock, ArrowRight, Heart } from "lucide-react";
+import Image from "next/image";
 
 export default function Footer() {
   const [email, setEmail] = useState("");
@@ -34,18 +35,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-10 md:grid-cols-4 lg:gap-12">
           {/* Brand Col */}
           <div className="md:col-span-1">
-            <Link href="/" className="flex items-center gap-2 mb-4 group">
-              <div className="flex h-9 w-9 items-center justify-center rounded-full bg-brand-primary text-brand-cream">
-                <Scissors size={16} />
-              </div>
-              <div className="flex flex-col">
-                <span className="font-display text-base font-extrabold tracking-tight text-brand-cream">
-                  BARK & BATHE
-                </span>
-                <span className="text-[9px] font-bold uppercase tracking-[0.2em] text-brand-secondary">
-                  Lounge
-                </span>
-              </div>
+            <Link href="/" className="inline-block bg-brand-cream/95 px-4 py-2.5 rounded-md mb-4 hover:scale-[1.02] transition-transform duration-300">
+              <Image
+                src="/images/logo.png"
+                alt="Bark & Bathe Lounge Logo"
+                width={150}
+                height={40}
+                className="h-8.5 w-auto object-contain"
+              />
             </Link>
             <p className="text-xs text-brand-soft/60 leading-relaxed mb-6">
               A premium, fear-free, and cage-free sanctuary dedicated to keeping your dogs and cats pampered, happy, and stunning.

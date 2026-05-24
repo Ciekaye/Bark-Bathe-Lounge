@@ -13,11 +13,9 @@ export default function Home() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Text Content */}
           <div className="lg:col-span-7 space-y-6 md:space-y-8">
-            <div className="inline-flex items-center gap-2 rounded-full bg-brand-soft/45 border border-brand-primary/10 px-4 py-1.5">
-              <Sparkles size={14} className="text-brand-primary animate-pulse" />
-              <span className="text-xs font-bold uppercase tracking-wider text-brand-primary">
-                Fear-Free & Cage-Free Pet Sanctuary
-              </span>
+            <div className="flex items-center gap-2 text-xs font-extrabold uppercase tracking-[0.2em] text-brand-primary">
+              <Sparkles size={14} className="animate-pulse" />
+              <span>Fear-Free & Cage-Free Pet Sanctuary</span>
             </div>
 
             <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-extrabold text-brand-dark leading-[1.08] tracking-tight">
