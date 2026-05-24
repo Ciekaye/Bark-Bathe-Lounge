@@ -35,14 +35,15 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-10 md:grid-cols-4 lg:gap-12">
           {/* Brand Col */}
           <div className="md:col-span-1">
-            <Link href="/" className="inline-block bg-brand-cream/95 px-4 py-2.5 rounded-md mb-4 hover:scale-[1.02] transition-transform duration-300">
-              <Image
-                src="/images/logo.png"
-                alt="Bark & Bathe Lounge Logo"
-                width={150}
-                height={40}
-                className="h-8.5 w-auto object-contain"
-              />
+            <Link href="/" className="inline-flex items-center gap-2 mb-4 hover:scale-[1.02] transition-transform duration-300">
+              <div className="flex h-9 w-9 items-center justify-center rounded-full bg-brand-primary text-brand-cream">
+                <svg viewBox="0 0 24 24" fill="currentColor" className="w-5.5 h-5.5">
+                  <path d="M12 14c1.66 0 3-1.34 3-3S13.66 8 12 8s-3 1.34-3 3 1.34 3 3 3zm-4.5-3c.83 0 1.5-.67 1.5-1.5S8.33 8 7.5 8 6 8.67 6 9.5 6.67 11 7.5 11zm9 0c.83 0 1.5-.67 1.5-1.5S17.33 8 16.5 8s-1.5.67-1.5 1.5.67 1.5 1.5 1.5zm-11 4.5c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5-1.5.67-1.5 1.5.67 1.5 1.5 1.5zm13 0c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5-1.5.67-1.5 1.5.67 1.5 1.5 1.5z" />
+                </svg>
+              </div>
+              <span className="font-display text-xl font-black tracking-tight text-brand-cream">
+                Bark<span className="text-brand-soft/75 font-normal"> & </span>Bathe
+              </span>
             </Link>
             <p className="text-xs text-brand-soft/60 leading-relaxed mb-6">
               A premium, fear-free, and cage-free sanctuary dedicated to keeping your dogs and cats pampered, happy, and stunning.

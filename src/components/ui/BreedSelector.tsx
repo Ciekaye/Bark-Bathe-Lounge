@@ -81,7 +81,7 @@ export default function BreedSelector() {
   const est = getEstimation();
 
   return (
-    <div className="glass-card rounded-3xl p-6 md:p-10 shadow-xl border-brand-primary/10 bg-white/70">
+    <div className="glass-card rounded-3xl p-6 md:p-10 shadow-xl border-brand-primary/10 bg-white">
       <div className="flex items-center gap-2 mb-6">
         <span className="flex h-6 w-6 items-center justify-center rounded-full bg-brand-primary/10 text-brand-primary">
           <Sparkles size={12} className="stroke-[2.5]" />
@@ -107,10 +107,10 @@ export default function BreedSelector() {
               <button
                 type="button"
                 onClick={() => setPetType("dog")}
-                className={`flex items-center justify-center gap-2.5 rounded-md border py-3.5 font-bold transition-all ${
+                className={`flex items-center justify-center gap-2.5 rounded-md border py-3.5 font-bold transition-all cursor-pointer ${
                   petType === "dog"
                     ? "border-brand-primary bg-brand-primary text-brand-cream shadow-md shadow-brand-primary/15"
-                    : "border-brand-dark/10 bg-white/40 text-brand-dark/75 hover:bg-white/90"
+                    : "border-brand-dark/10 bg-white text-brand-dark/75 hover:bg-brand-cream"
                 }`}
               >
                 <Dog size={18} />
@@ -119,10 +119,10 @@ export default function BreedSelector() {
               <button
                 type="button"
                 onClick={() => setPetType("cat")}
-                className={`flex items-center justify-center gap-2.5 rounded-md border py-3.5 font-bold transition-all ${
+                className={`flex items-center justify-center gap-2.5 rounded-md border py-3.5 font-bold transition-all cursor-pointer ${
                   petType === "cat"
                     ? "border-brand-primary bg-brand-primary text-brand-cream shadow-md shadow-brand-primary/15"
-                    : "border-brand-dark/10 bg-white/40 text-brand-dark/75 hover:bg-white/90"
+                    : "border-brand-dark/10 bg-white text-brand-dark/75 hover:bg-brand-cream"
                 }`}
               >
                 <Cat size={18} />
@@ -148,10 +148,10 @@ export default function BreedSelector() {
                     key={item.id}
                     type="button"
                     onClick={() => setDogSize(item.id as DogSize)}
-                    className={`flex flex-col items-center justify-center rounded-md border p-3 transition-all ${
+                    className={`flex flex-col items-center justify-center rounded-md border p-3 transition-all cursor-pointer ${
                       dogSize === item.id
-                        ? "border-brand-primary bg-brand-primary/5 text-brand-primary font-bold shadow-sm"
-                        : "border-brand-dark/5 bg-white/30 text-brand-dark/60 hover:bg-white/80"
+                        ? "border-brand-primary bg-brand-primary/10 text-brand-primary font-bold shadow-sm"
+                        : "border-brand-dark/5 bg-white text-brand-dark/60 hover:bg-brand-cream"
                     }`}
                   >
                     <span className="text-sm font-extrabold">{item.label}</span>
@@ -177,10 +177,10 @@ export default function BreedSelector() {
                   key={item.id}
                   type="button"
                   onClick={() => setCoat(item.id as CoatCondition)}
-                  className={`flex items-start gap-3 rounded-md border p-3.5 text-left transition-all ${
+                  className={`flex items-start gap-3 rounded-md border p-3.5 text-left transition-all cursor-pointer ${
                     coat === item.id
-                      ? "border-brand-primary bg-brand-primary/5 text-brand-primary font-bold"
-                      : "border-brand-dark/5 bg-white/30 text-brand-dark/80 hover:bg-white/80"
+                      ? "border-brand-primary bg-brand-primary/10 text-brand-primary font-bold"
+                      : "border-brand-dark/5 bg-white text-brand-dark/80 hover:bg-brand-cream"
                   }`}
                 >
                   <div

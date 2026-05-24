@@ -129,7 +129,7 @@ export default function Home() {
       </section>
 
       {/* 2. Core Philosophy (Why Bark & Bathe) */}
-      <section className="bg-brand-soft/20 py-16 md:py-24">
+      <section className="bg-[#EBF4F0] py-16 md:py-24">
         <div className="px-4 md:px-8 max-w-7xl mx-auto space-y-16">
           <div className="text-center max-w-2xl mx-auto space-y-4">
             <span className="text-xs font-bold uppercase tracking-[0.25em] text-brand-primary">
@@ -169,9 +169,9 @@ export default function Home() {
             ].map((card, idx) => (
               <div
                 key={idx}
-                className="glass-card rounded-2xl p-6 transition-all hover:-translate-y-1 hover:shadow-lg hover:border-brand-primary/20 bg-white/60"
+                className="glass-card rounded-2xl p-6 transition-all hover:-translate-y-1 hover:shadow-lg hover:border-brand-primary/20 bg-white"
               >
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-soft/30 mb-5">
+                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-soft mb-5">
                   {card.icon}
                 </div>
                 <h3 className="font-display text-base font-extrabold text-brand-dark mb-3">
@@ -252,7 +252,7 @@ export default function Home() {
       </section>
 
       {/* 5. Testimonials Slider */}
-      <section className="bg-brand-soft/10 py-16 md:py-24">
+      <section className="bg-[#EBF4F0] py-16 md:py-24">
         <div className="px-4 md:px-8 max-w-7xl mx-auto space-y-12">
           <div className="text-center max-w-2xl mx-auto space-y-4">
             <span className="text-xs font-bold uppercase tracking-[0.25em] text-brand-primary">
