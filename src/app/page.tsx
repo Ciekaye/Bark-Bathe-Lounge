@@ -11,10 +11,18 @@ export default function Home() {
       {/* 1. Hero Section */}
       <section className="relative overflow-hidden w-full bg-white pt-8 md:pt-16 pb-6">
         {/* Floating and Repeating Background Paw Pattern */}
+        {/* Floating and Repeating Background Paw Pattern */}
         <div 
-          className="absolute inset-0 opacity-[0.02] select-none pointer-events-none -z-20"
+          className="absolute inset-0 opacity-[0.04] select-none pointer-events-none -z-20"
           style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 100 100'%3E%3Cg fill='%232D5A47'%3E%3Cpath d='M 5.5 9.7 A 1.8 1.8 0 1 0 5.5 13.3 A 1.8 1.8 0 1 0 5.5 9.7 Z M 9.5 6.2 A 1.8 1.8 0 1 0 9.5 9.8 A 1.8 1.8 0 1 0 9.5 6.2 Z M 14.5 6.2 A 1.8 1.8 0 1 0 14.5 9.8 A 1.8 1.8 0 1 0 14.5 6.2 Z M 18.5 9.7 A 1.8 1.8 0 1 0 18.5 13.3 A 1.8 1.8 0 1 0 18.5 9.7 Z M 12 12 C 9 12 6.5 14 6.5 17.5 C 6.5 20 8.5 21 10.5 21 C 11.5 21 12 20.5 12 20.5 C 12 20.5 12.5 21 13.5 21 C 15.5 21 17.5 20 17.5 17.5 C 17.5 14 15 12 12 12 Z' transform='translate(10,10) scale(1.6)'/%3E%3Cpath d='M 5.5 9.7 A 1.8 1.8 0 1 0 5.5 13.3 A 1.8 1.8 0 1 0 5.5 9.7 Z M 9.5 6.2 A 1.8 1.8 0 1 0 9.5 9.8 A 1.8 1.8 0 1 0 9.5 6.2 Z M 14.5 6.2 A 1.8 1.8 0 1 0 14.5 9.8 A 1.8 1.8 0 1 0 14.5 6.2 Z M 18.5 9.7 A 1.8 1.8 0 1 0 18.5 13.3 A 1.8 1.8 0 1 0 18.5 9.7 Z M 12 12 C 9 12 6.5 14 6.5 17.5 C 6.5 20 8.5 21 10.5 21 C 11.5 21 12 20.5 12 20.5 C 12 20.5 12.5 21 13.5 21 C 15.5 21 17.5 20 17.5 17.5 C 17.5 14 15 12 12 12 Z' transform='translate(50,50) scale(1.2) rotate(25, 12, 12)'/%3E%3C/g%3E%3C/svg%3E")`,
+            backgroundImage: `url("data:image/svg+xml,${encodeURIComponent(`
+              <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 100 100">
+                <g fill="#2D5A47">
+                  <path d="M 5.5 9.7 A 1.8 1.8 0 1 0 5.5 13.3 A 1.8 1.8 0 1 0 5.5 9.7 Z M 9.5 6.2 A 1.8 1.8 0 1 0 9.5 9.8 A 1.8 1.8 0 1 0 9.5 6.2 Z M 14.5 6.2 A 1.8 1.8 0 1 0 14.5 9.8 A 1.8 1.8 0 1 0 14.5 6.2 Z M 18.5 9.7 A 1.8 1.8 0 1 0 18.5 13.3 A 1.8 1.8 0 1 0 18.5 9.7 Z M 12 12 C 9 12 6.5 14 6.5 17.5 C 6.5 20 8.5 21 10.5 21 C 11.5 21 12 20.5 12 20.5 C 12 20.5 12.5 21 13.5 21 C 15.5 21 17.5 20 17.5 17.5 C 17.5 14 15 12 12 12 Z" transform="translate(10,10) scale(1.6)"/>
+                  <path d="M 5.5 9.7 A 1.8 1.8 0 1 0 5.5 13.3 A 1.8 1.8 0 1 0 5.5 9.7 Z M 9.5 6.2 A 1.8 1.8 0 1 0 9.5 9.8 A 1.8 1.8 0 1 0 9.5 6.2 Z M 14.5 6.2 A 1.8 1.8 0 1 0 14.5 9.8 A 1.8 1.8 0 1 0 14.5 6.2 Z M 18.5 9.7 A 1.8 1.8 0 1 0 18.5 13.3 A 1.8 1.8 0 1 0 18.5 9.7 Z M 12 12 C 9 12 6.5 14 6.5 17.5 C 6.5 20 8.5 21 10.5 21 C 11.5 21 12 20.5 12 20.5 C 12 20.5 12.5 21 13.5 21 C 15.5 21 17.5 20 17.5 17.5 C 17.5 14 15 12 12 12 Z" transform="translate(50,50) scale(1.2) rotate(25, 12, 12)"/>
+                </g>
+              </svg>
+            `)}")`,
             backgroundSize: '160px 160px'
           }}
         />
@@ -43,7 +51,7 @@ export default function Home() {
               </h1>
 
             <p className="text-sm md:text-base text-brand-dark-muted leading-relaxed max-w-xl">
-              Experience the ultimate cage-free sanctuary for your pet. At **Bark & Bathe Lounge**, we replace stress and anxiety with calming lavender aromatherapy, whisper-quiet machinery, and 100% organic botanical spa treatments.
+              Experience the ultimate cage-free sanctuary for your pet. At Bark & Bathe Lounge, we replace stress and anxiety with calming lavender aromatherapy, whisper-quiet machinery, and 100% organic botanical spa treatments.
             </p>
 
             {/* CTA Actions */}
@@ -88,8 +96,8 @@ export default function Home() {
 
             {/* Hero Image */}
             <div className="lg:col-span-5 relative flex justify-center items-center mt-8 lg:mt-0">
-              {/* Sleek diagonal background banner */}
-              <div className="absolute inset-y-0 -right-24 left-10 md:left-20 bg-brand-soft/30 -skew-x-6 rounded-l-[4rem] -z-10" />
+              {/* Soft modern glowing background accent */}
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[110%] h-[110%] bg-brand-soft/30 rounded-full blur-3xl -z-10" />
               
               {/* Floating background decorative paw print */}
               <div className="absolute top-10 right-10 text-brand-primary/20 opacity-60 select-none pointer-events-none animate-bounce duration-[4000ms]">
