@@ -139,7 +139,7 @@ export default function Careers() {
                     required
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="w-full rounded-xl border border-brand-primary/10 bg-white/50 px-4 py-3 text-xs text-brand-dark focus:border-brand-primary focus:outline-none"
+                    className="w-full rounded-md border border-brand-primary/10 bg-white/50 px-4 py-3 text-xs text-brand-dark focus:border-brand-primary focus:outline-none"
                     placeholder="Jane Doe"
                   />
                 </div>
@@ -152,7 +152,7 @@ export default function Careers() {
                     required
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="w-full rounded-xl border border-brand-primary/10 bg-white/50 px-4 py-3 text-xs text-brand-dark focus:border-brand-primary focus:outline-none"
+                    className="w-full rounded-md border border-brand-primary/10 bg-white/50 px-4 py-3 text-xs text-brand-dark focus:border-brand-primary focus:outline-none"
                     placeholder="jane@example.com"
                   />
                 </div>
@@ -168,7 +168,7 @@ export default function Careers() {
                     required
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    className="w-full rounded-xl border border-brand-primary/10 bg-white/50 px-4 py-3 text-xs text-brand-dark focus:border-brand-primary focus:outline-none"
+                    className="w-full rounded-md border border-brand-primary/10 bg-white/50 px-4 py-3 text-xs text-brand-dark focus:border-brand-primary focus:outline-none"
                     placeholder="(555) 000-0000"
                   />
                 </div>
@@ -179,7 +179,7 @@ export default function Careers() {
                   <select
                     value={formData.position}
                     onChange={(e) => setFormData({ ...formData, position: e.target.value })}
-                    className="w-full rounded-xl border border-brand-primary/10 bg-white/50 px-4 py-3 text-xs text-brand-dark focus:border-brand-primary focus:outline-none"
+                    className="w-full rounded-md border border-brand-primary/10 bg-white/50 px-4 py-3 text-xs text-brand-dark focus:border-brand-primary focus:outline-none"
                   >
                     <option value="canine-groomer">Master Canine Stylist</option>
                     <option value="feline-groomer">Feline Styling Specialist</option>
@@ -225,7 +225,7 @@ export default function Careers() {
                   rows={4}
                   value={formData.philosophy}
                   onChange={(e) => setFormData({ ...formData, philosophy: e.target.value })}
-                  className="w-full rounded-xl border border-brand-primary/10 bg-white/50 px-4 py-3 text-xs text-brand-dark focus:border-brand-primary focus:outline-none placeholder-brand-dark/30"
+                  className="w-full rounded-md border border-brand-primary/10 bg-white/50 px-4 py-3 text-xs text-brand-dark focus:border-brand-primary focus:outline-none placeholder-brand-dark/30"
                   placeholder="How do you handle an anxious dog that is afraid of running water or nail clippers? Tell us your soothing approach."
                 />
               </div>
@@ -234,7 +234,7 @@ export default function Careers() {
                 <button
                   type="submit"
                   disabled={status === "submitting" || status === "success"}
-                  className="w-full flex items-center justify-center gap-2 rounded-xl bg-brand-primary py-3.5 text-xs font-bold uppercase tracking-wider text-brand-cream hover:bg-brand-primary-hover hover:scale-[1.01] transition-all disabled:opacity-50"
+                  className="w-full flex items-center justify-center gap-2 rounded-md bg-brand-primary py-3.5 text-xs font-bold uppercase tracking-wider text-brand-cream hover:bg-brand-primary-hover hover:scale-[1.01] hover:-rotate-0.5 transition-all disabled:opacity-50"
                 >
                   {status === "submitting" ? (
                     <span>Submitting Application...</span>

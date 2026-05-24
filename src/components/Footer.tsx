@@ -133,7 +133,7 @@ export default function Footer() {
               Join the list for luxury pet tips, seasonal discounts, and scheduling alerts.
             </p>
             <form onSubmit={handleSubscribe} className="relative">
-              <div className="flex rounded-full overflow-hidden border border-brand-primary/20 bg-brand-dark-muted/30 p-1">
+              <div className="flex rounded-md overflow-hidden border border-brand-primary/20 bg-brand-dark-muted/30 p-1">
                 <input
                   type="email"
                   placeholder="Your email address"
@@ -143,7 +143,7 @@ export default function Footer() {
                 />
                 <button
                   type="submit"
-                  className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-brand-primary text-brand-cream hover:bg-brand-primary-hover transition-colors"
+                  className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-brand-primary text-brand-cream hover:bg-brand-primary-hover transition-colors"
                   aria-label="Subscribe"
                 >
                   <ArrowRight size={14} />

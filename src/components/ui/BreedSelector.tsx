@@ -92,7 +92,7 @@ export default function BreedSelector() {
       </div>
 
       <h3 className="font-display text-2xl font-extrabold text-brand-dark mb-6">
-        Tailor Your Pet's Retreat
+        Let's size up your fur-baby! 🐾
       </h3>
 
       <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
@@ -101,32 +101,32 @@ export default function BreedSelector() {
           {/* Step 1: Pet Type Selection */}
           <div>
             <label className="block text-xs font-extrabold uppercase tracking-wider text-brand-dark/50 mb-3">
-              1. What kind of pet is visiting?
+              1. Who is our lovely guest today?
             </label>
             <div className="grid grid-cols-2 gap-3">
               <button
                 type="button"
                 onClick={() => setPetType("dog")}
-                className={`flex items-center justify-center gap-2.5 rounded-xl border py-3.5 font-bold transition-all ${
+                className={`flex items-center justify-center gap-2.5 rounded-md border py-3.5 font-bold transition-all ${
                   petType === "dog"
                     ? "border-brand-primary bg-brand-primary text-brand-cream shadow-md shadow-brand-primary/15"
                     : "border-brand-dark/10 bg-white/40 text-brand-dark/75 hover:bg-white/90"
                 }`}
               >
                 <Dog size={18} />
-                <span>Dog Companion</span>
+                <span>A happy Doggo 🐶</span>
               </button>
               <button
                 type="button"
                 onClick={() => setPetType("cat")}
-                className={`flex items-center justify-center gap-2.5 rounded-xl border py-3.5 font-bold transition-all ${
+                className={`flex items-center justify-center gap-2.5 rounded-md border py-3.5 font-bold transition-all ${
                   petType === "cat"
                     ? "border-brand-primary bg-brand-primary text-brand-cream shadow-md shadow-brand-primary/15"
                     : "border-brand-dark/10 bg-white/40 text-brand-dark/75 hover:bg-white/90"
                 }`}
               >
                 <Cat size={18} />
-                <span>Cat Companion</span>
+                <span>A regal Kitty 🐱</span>
               </button>
             </div>
           </div>
@@ -135,7 +135,7 @@ export default function BreedSelector() {
           {petType === "dog" && (
             <div>
               <label className="block text-xs font-extrabold uppercase tracking-wider text-brand-dark/50 mb-3">
-                2. Select Dog Size
+                2. How big is your pup? 🦴
               </label>
               <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
                 {[
@@ -148,7 +148,7 @@ export default function BreedSelector() {
                     key={item.id}
                     type="button"
                     onClick={() => setDogSize(item.id as DogSize)}
-                    className={`flex flex-col items-center justify-center rounded-xl border p-3 transition-all ${
+                    className={`flex flex-col items-center justify-center rounded-md border p-3 transition-all ${
                       dogSize === item.id
                         ? "border-brand-primary bg-brand-primary/5 text-brand-primary font-bold shadow-sm"
                         : "border-brand-dark/5 bg-white/30 text-brand-dark/60 hover:bg-white/80"
@@ -165,7 +165,7 @@ export default function BreedSelector() {
           {/* Step 3: Coat Condition */}
           <div>
             <label className="block text-xs font-extrabold uppercase tracking-wider text-brand-dark/50 mb-3">
-              {petType === "dog" ? "3. Coat Condition & Grooming Needs" : "2. Coat Condition & Grooming Needs"}
+              {petType === "dog" ? "3. How fluffy is their coat right now? ☁️" : "2. How fluffy is their coat right now? ☁️"}
             </label>
             <div className="grid grid-cols-1 gap-2.5">
               {[
@@ -177,7 +177,7 @@ export default function BreedSelector() {
                   key={item.id}
                   type="button"
                   onClick={() => setCoat(item.id as CoatCondition)}
-                  className={`flex items-start gap-3 rounded-xl border p-3.5 text-left transition-all ${
+                  className={`flex items-start gap-3 rounded-md border p-3.5 text-left transition-all ${
                     coat === item.id
                       ? "border-brand-primary bg-brand-primary/5 text-brand-primary font-bold"
                       : "border-brand-dark/5 bg-white/30 text-brand-dark/80 hover:bg-white/80"
@@ -255,7 +255,7 @@ export default function BreedSelector() {
                   package: est.pkg,
                 },
               }}
-              className="flex w-full items-center justify-center gap-2 rounded-xl bg-brand-secondary py-3 text-xs font-bold uppercase tracking-wider text-brand-dark transition-all hover:bg-brand-secondary-hover hover:scale-[1.02]"
+              className="flex w-full items-center justify-center gap-2 rounded-md bg-brand-secondary py-3 text-xs font-bold uppercase tracking-wider text-brand-dark transition-all hover:bg-brand-secondary-hover hover:scale-[1.02] hover:-rotate-1"
             >
               <span>Request This Package</span>
               <ArrowRight size={14} />

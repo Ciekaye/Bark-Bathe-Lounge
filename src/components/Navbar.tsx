@@ -88,7 +88,7 @@ export default function Navbar() {
             <div className="hidden md:flex items-center gap-4">
               <Link
                 href="/book"
-                className="group relative flex items-center gap-2 overflow-hidden rounded-full bg-brand-primary px-6 py-2.5 text-xs font-bold uppercase tracking-wider text-brand-cream shadow-md shadow-brand-primary/10 transition-all duration-300 hover:bg-brand-primary-hover hover:shadow-lg hover:shadow-brand-primary/20"
+                className="group relative flex items-center gap-2 overflow-hidden rounded-md bg-brand-primary px-6 py-2.5 text-xs font-bold uppercase tracking-wider text-brand-cream shadow-md shadow-brand-primary/10 transition-all duration-300 hover:bg-brand-primary-hover hover:shadow-lg hover:shadow-brand-primary/20 hover:scale-[1.02] hover:-rotate-1"
               >
                 <Calendar size={14} />
                 <span>Book Appointment</span>
@@ -163,7 +163,7 @@ export default function Navbar() {
             <Link
               href="/book"
               onClick={() => setIsOpen(false)}
-              className="flex w-full items-center justify-center gap-2 rounded-full bg-brand-primary py-3.5 text-sm font-bold uppercase tracking-wider text-brand-cream hover:bg-brand-primary-hover"
+              className="flex w-full items-center justify-center gap-2 rounded-md bg-brand-primary py-3.5 text-sm font-bold uppercase tracking-wider text-brand-cream hover:bg-brand-primary-hover"
             >
               <Calendar size={16} />
               <span>Book Appointment</span>

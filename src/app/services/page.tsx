@@ -122,7 +122,7 @@ export default function Services() {
               </div>
 
               {/* Pricing Grid */}
-              <div className="grid grid-cols-2 gap-4 py-4 border-y border-brand-primary/10 mb-6 bg-brand-soft/10 rounded-xl px-4">
+              <div className="grid grid-cols-2 gap-4 py-4 border-y border-brand-primary/10 mb-6 bg-brand-soft/10 rounded-md px-4">
                 {pkg.dogPrice && (
                   <div className="flex flex-col">
                     <span className="text-[9px] font-bold text-brand-primary uppercase tracking-wider">
@@ -165,7 +165,7 @@ export default function Services() {
                   pathname: "/book",
                   query: { package: pkg.name },
                 }}
-                className={`flex w-full items-center justify-center gap-2 rounded-xl py-3 text-xs font-bold uppercase tracking-wider transition-all hover:scale-[1.02] ${
+                className={`flex w-full items-center justify-center gap-2 rounded-md py-3 text-xs font-bold uppercase tracking-wider transition-all hover:scale-[1.02] hover:-rotate-1 ${
                   pkg.popular
                     ? "bg-brand-primary text-brand-cream hover:bg-brand-primary-hover shadow-md shadow-brand-primary/10"
                     : "bg-brand-soft/30 text-brand-primary hover:bg-brand-soft/60"
@@ -226,7 +226,7 @@ export default function Services() {
       <section className="text-center py-6">
         <Link
           href="/book"
-          className="inline-flex items-center gap-2 rounded-full bg-brand-secondary px-8 py-4 text-sm font-bold uppercase tracking-wider text-brand-dark hover:bg-brand-secondary-hover hover:scale-[1.02] shadow-lg shadow-brand-secondary/10 transition-all"
+          className="inline-flex items-center gap-2 rounded-md bg-brand-secondary px-8 py-4 text-sm font-bold uppercase tracking-wider text-brand-dark hover:bg-brand-secondary-hover hover:scale-[1.02] hover:-rotate-1 shadow-lg shadow-brand-secondary/10 transition-all"
         >
           <Calendar size={14} />
           <span>Proceed to Booking Wizard</span>

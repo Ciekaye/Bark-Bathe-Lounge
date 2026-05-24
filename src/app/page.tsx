@@ -21,9 +21,9 @@ export default function Home() {
             </div>
 
             <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-extrabold text-brand-dark leading-[1.08] tracking-tight">
-              The Ultimate <br />
+              The Happy-Tails <br />
               <span className="text-brand-primary">Sanctuary</span> for Happy, <br />
-              <span className="text-brand-secondary">Pampered</span> Pets.
+              <span className="text-brand-secondary">Spunky</span> Pets! 🐾
             </h1>
 
             <p className="text-sm md:text-base text-brand-dark-muted leading-relaxed max-w-xl">
@@ -34,14 +34,14 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
               <Link
                 href="/book"
-                className="flex items-center justify-center gap-2 rounded-full bg-brand-primary px-8 py-4 text-sm font-bold uppercase tracking-wider text-brand-cream hover:bg-brand-primary-hover hover:scale-[1.02] shadow-md shadow-brand-primary/10 transition-all"
+                className="flex items-center justify-center gap-2 rounded-md bg-brand-primary px-8 py-4 text-sm font-bold uppercase tracking-wider text-brand-cream hover:bg-brand-primary-hover hover:scale-[1.02] hover:-rotate-1 shadow-md shadow-brand-primary/10 transition-all"
               >
                 <span>Book a Pamper Session</span>
                 <ChevronRight size={14} className="stroke-[3]" />
               </Link>
               <Link
                 href="/services"
-                className="flex items-center justify-center gap-2 rounded-full bg-white border border-brand-primary/15 px-8 py-4 text-sm font-bold uppercase tracking-wider text-brand-dark hover:bg-brand-cream hover:scale-[1.02] transition-all"
+                className="flex items-center justify-center gap-2 rounded-md bg-white border border-brand-primary/15 px-8 py-4 text-sm font-bold uppercase tracking-wider text-brand-dark hover:bg-brand-cream hover:scale-[1.02] hover:rotate-1 transition-all"
               >
                 <span>Explore Packages</span>
               </Link>
@@ -96,8 +96,8 @@ export default function Home() {
               Our Core Standards
             </span>
             <h2 className="font-display text-3xl md:text-4xl font-extrabold text-brand-dark tracking-tight">
-              Grooming Reimagined <br />
-              For Absolute Comfort
+              No Cages. No Stress. <br />
+              Pure Pamper! 🛁
             </h2>
             <p className="text-xs md:text-sm text-brand-dark-muted">
               We threw out the stressful blueprints of traditional salons. Here is how we cultivate a safe, luxurious, and stress-free pampering cycle.
@@ -267,7 +267,7 @@ export default function Home() {
           <div className="pt-4">
             <Link
               href="/book"
-              className="inline-flex items-center gap-2 rounded-full bg-brand-secondary px-8 py-4 text-sm font-bold uppercase tracking-wider text-brand-dark transition-all hover:bg-brand-secondary-hover hover:scale-[1.02] shadow-lg shadow-brand-secondary/10"
+              className="inline-flex items-center gap-2 rounded-md bg-brand-secondary px-8 py-4 text-sm font-bold uppercase tracking-wider text-brand-dark transition-all hover:bg-brand-secondary-hover hover:scale-[1.02] hover:-rotate-1 shadow-lg shadow-brand-secondary/10"
             >
               <span>Request Appointment Now</span>
               <ChevronRight size={14} className="stroke-[3]" />

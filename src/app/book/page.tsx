@@ -191,7 +191,7 @@ function BookingWizardContent() {
         <div className="pt-4 flex flex-col gap-3">
           <Link
             href="/"
-            className="rounded-full bg-brand-primary py-3.5 text-xs font-bold uppercase tracking-wider text-brand-cream hover:bg-brand-primary-hover transition-colors"
+            className="rounded-md bg-brand-primary py-3.5 text-xs font-bold uppercase tracking-wider text-brand-cream hover:bg-brand-primary-hover transition-colors"
           >
             Return to Homepage
           </Link>
@@ -686,7 +686,7 @@ function BookingWizardContent() {
                 <button
                   type="button"
                   onClick={handleNextStep}
-                  className="flex items-center gap-1 rounded-full bg-brand-primary px-6 py-2.5 text-xs font-bold uppercase tracking-wider text-brand-cream hover:bg-brand-primary-hover focus:outline-none shadow-md shadow-brand-primary/10"
+                  className="flex items-center gap-1 rounded-md bg-brand-primary px-6 py-2.5 text-xs font-bold uppercase tracking-wider text-brand-cream hover:bg-brand-primary-hover focus:outline-none shadow-md shadow-brand-primary/10 hover:scale-[1.02] hover:-rotate-1"
                 >
                   <span>Continue</span>
                   <ChevronRight size={16} className="stroke-[3.5]" />
@@ -695,7 +695,7 @@ function BookingWizardContent() {
                 <button
                   type="submit"
                   disabled={submitStatus === "submitting" || !policyAgreed}
-                  className="flex items-center gap-1 rounded-full bg-brand-secondary px-8 py-3.5 text-xs font-bold uppercase tracking-wider text-brand-dark hover:bg-brand-secondary-hover disabled:opacity-50 shadow-md shadow-brand-secondary/15"
+                  className="flex items-center gap-1 rounded-md bg-brand-secondary px-8 py-3.5 text-xs font-bold uppercase tracking-wider text-brand-dark hover:bg-brand-secondary-hover disabled:opacity-50 shadow-md shadow-brand-secondary/15 hover:scale-[1.02] hover:-rotate-1"
                 >
                   {submitStatus === "submitting" ? (
                     <span>Scheduling Winston...</span>

@@ -119,9 +119,9 @@ export default function Team() {
                   pathname: "/book",
                   query: { groomer: member.name },
                 }}
-                className="rounded-full bg-brand-primary px-5 py-2 text-[10px] font-bold uppercase tracking-wider text-brand-cream hover:bg-brand-primary-hover hover:scale-[1.03] transition-all"
+                className="rounded-md bg-brand-primary px-5 py-2 text-[10px] font-bold uppercase tracking-wider text-brand-cream hover:bg-brand-primary-hover hover:scale-[1.03] hover:-rotate-1 transition-all"
               >
-                Request Elena
+                Request {member.name.split(" ")[0]}
               </Link>
             </div>
           </div>
@@ -163,7 +163,7 @@ export default function Team() {
       <section className="text-center">
         <Link
           href="/book"
-          className="inline-flex items-center gap-2 rounded-full bg-brand-secondary px-8 py-4 text-sm font-bold uppercase tracking-wider text-brand-dark hover:bg-brand-secondary-hover hover:scale-[1.02] shadow-lg shadow-brand-secondary/10 transition-all"
+          className="inline-flex items-center gap-2 rounded-md bg-brand-secondary px-8 py-4 text-sm font-bold uppercase tracking-wider text-brand-dark hover:bg-brand-secondary-hover hover:scale-[1.02] hover:-rotate-1 shadow-lg shadow-brand-secondary/10 transition-all"
         >
           <Calendar size={14} />
           <span>Match Me With a Specialist</span>
