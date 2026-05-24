@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Scissors, Menu, X, Calendar, Sparkles } from "lucide-react";
+import { Scissors, Menu, X, Calendar, Sparkles, Search } from "lucide-react";
 import Image from "next/image";
 
 export default function Navbar() {
@@ -48,14 +48,15 @@ export default function Navbar() {
         >
           <div className="flex items-center justify-between">
             {/* Brand Logo */}
-            <Link href="/" className="flex items-center group">
-              <Image
-                src="/images/logo.png"
-                alt="Bark & Bathe Lounge Logo"
-                width={180}
-                height={50}
-                className="h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.03]"
-              />
+            <Link href="/" className="flex items-center gap-2 group">
+              <div className="flex h-9 w-9 items-center justify-center rounded-full bg-brand-primary text-brand-cream transition-transform duration-300 group-hover:scale-105">
+                <svg viewBox="0 0 24 24" fill="currentColor" className="w-5.5 h-5.5">
+                  <path d="M12 14c1.66 0 3-1.34 3-3S13.66 8 12 8s-3 1.34-3 3 1.34 3 3 3zm-4.5-3c.83 0 1.5-.67 1.5-1.5S8.33 8 7.5 8 6 8.67 6 9.5 6.67 11 7.5 11zm9 0c.83 0 1.5-.67 1.5-1.5S17.33 8 16.5 8s-1.5.67-1.5 1.5.67 1.5 1.5 1.5zm-11 4.5c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5-1.5.67-1.5 1.5.67 1.5 1.5 1.5zm13 0c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5-1.5.67-1.5 1.5.67 1.5 1.5 1.5z" />
+                </svg>
+              </div>
+              <span className="font-display text-xl font-black tracking-tight text-brand-primary transition-transform duration-300 group-hover:scale-[1.01]">
+                Bark<span className="text-brand-dark/80 font-normal"> & </span>Bathe
+              </span>
             </Link>
 
             {/* Desktop Navigation Links */}
@@ -68,7 +69,7 @@ export default function Navbar() {
                     href={link.href}
                     className={`relative text-sm font-semibold transition-colors duration-200 py-1 ${
                       isActive
-                        ? "text-brand-primary"
+                        ? "text-brand-primary font-bold"
                         : "text-brand-dark/70 hover:text-brand-primary"
                     }`}
                   >
@@ -81,15 +82,16 @@ export default function Navbar() {
               })}
             </nav>
 
-            {/* CTA Button */}
-            <div className="hidden md:flex items-center gap-4">
+            {/* CTA Button and Search */}
+            <div className="hidden md:flex items-center gap-6">
+              <button className="text-brand-dark/70 hover:text-brand-primary transition-colors focus:outline-none cursor-pointer" aria-label="Search">
+                <Search size={20} />
+              </button>
               <Link
                 href="/book"
-                className="group relative flex items-center gap-2 overflow-hidden rounded-md bg-brand-primary px-6 py-2.5 text-xs font-bold uppercase tracking-wider text-brand-cream shadow-md shadow-brand-primary/10 transition-all duration-300 hover:bg-brand-primary-hover hover:shadow-lg hover:shadow-brand-primary/20 hover:scale-[1.02] hover:-rotate-1"
+                className="rounded-full border-2 border-brand-primary px-6 py-2.5 text-xs font-bold uppercase tracking-wider text-brand-primary transition-all duration-300 hover:bg-brand-primary hover:text-brand-cream hover:shadow-lg hover:scale-105 active:scale-95"
               >
-                <Calendar size={14} />
-                <span>Book Appointment</span>
-                <span className="absolute inset-0 block h-full w-full animate-shimmer pointer-events-none opacity-20" />
+                Book Now
               </Link>
             </div>
 
@@ -121,14 +123,15 @@ export default function Navbar() {
       >
         <div className="flex flex-col h-full">
           <div className="flex items-center justify-between mb-8">
-            <Link href="/" onClick={() => setIsOpen(false)} className="flex items-center group">
-              <Image
-                src="/images/logo.png"
-                alt="Bark & Bathe Lounge Logo"
-                width={150}
-                height={42}
-                className="h-8.5 w-auto object-contain"
-              />
+            <Link href="/" onClick={() => setIsOpen(false)} className="flex items-center gap-2 group">
+              <div className="flex h-8 w-8 items-center justify-center rounded-full bg-brand-primary text-brand-cream">
+                <svg viewBox="0 0 24 24" fill="currentColor" className="w-4.5 h-4.5">
+                  <path d="M12 14c1.66 0 3-1.34 3-3S13.66 8 12 8s-3 1.34-3 3 1.34 3 3 3zm-4.5-3c.83 0 1.5-.67 1.5-1.5S8.33 8 7.5 8 6 8.67 6 9.5 6.67 11 7.5 11zm9 0c.83 0 1.5-.67 1.5-1.5S17.33 8 16.5 8s-1.5.67-1.5 1.5.67 1.5 1.5 1.5zm-11 4.5c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5-1.5.67-1.5 1.5.67 1.5 1.5 1.5zm13 0c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5-1.5.67-1.5 1.5.67 1.5 1.5 1.5z" />
+                </svg>
+              </div>
+              <span className="font-display text-lg font-black tracking-tight text-brand-primary">
+                Bark<span className="text-brand-dark/80 font-normal"> & </span>Bathe
+              </span>
             </Link>
             <button
               onClick={() => setIsOpen(false)}
@@ -161,7 +164,7 @@ export default function Navbar() {
             <Link
               href="/book"
               onClick={() => setIsOpen(false)}
-              className="flex w-full items-center justify-center gap-2 rounded-md bg-brand-primary py-3.5 text-sm font-bold uppercase tracking-wider text-brand-cream hover:bg-brand-primary-hover"
+              className="flex w-full items-center justify-center gap-2 rounded-full bg-brand-primary py-3.5 text-sm font-bold uppercase tracking-wider text-brand-cream hover:bg-brand-primary-hover shadow-md hover:shadow-lg transition-all duration-300"
             >
               <Calendar size={16} />
               <span>Book Appointment</span>
