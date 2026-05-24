@@ -12,21 +12,21 @@ export default function Home() {
       <section className="relative overflow-hidden px-4 md:px-8 max-w-7xl mx-auto pt-8 md:pt-16 pb-6">
         {/* Floating and Repeating Background Paw Pattern */}
         <div 
-          className="absolute inset-0 opacity-[0.035] select-none pointer-events-none -z-20"
+          className="absolute inset-0 opacity-[0.08] select-none pointer-events-none -z-20"
           style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 100 100'%3E%3Cg fill='%232D5A47'%3E%3Cpath d='M12 13c1.66 0 3-1.34 3-3S13.66 7 12 7s-3 1.34-3 3 1.34 3 3 3zm-3.5-3c.83 0 1.5-.67 1.5-1.5S9.33 7 8.5 7 7 7.67 7 8.5 7.67 10 8.5 10zm7 0c.83 0 1.5-.67 1.5-1.5S16.33 7 15.5 7s-1.5.67-1.5 1.5.67 1.5 1.5 1.5zm-10 4.5c.83 0 1.5-.67 1.5-1.5S6.33 10 5.5 10s-1.5.67-1.5 1.5.67 1.5 1.5 1.5zm13 0c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5-1.5.67-1.5 1.5.67 1.5 1.5 1.5z' transform='translate(10,10) scale(1.6)'/%3E%3Cpath d='M12 13c1.66 0 3-1.34 3-3S13.66 7 12 7s-3 1.34-3 3 1.34 3 3 3zm-3.5-3c.83 0 1.5-.67 1.5-1.5S9.33 7 8.5 7 7 7.67 7 8.5 7.67 10 8.5 10zm7 0c.83 0 1.5-.67 1.5-1.5S16.33 7 15.5 7s-1.5.67-1.5 1.5.67 1.5 1.5 1.5zm-10 4.5c.83 0 1.5-.67 1.5-1.5S6.33 10 5.5 10s-1.5.67-1.5 1.5.67 1.5 1.5 1.5zm13 0c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5-1.5.67-1.5 1.5.67 1.5 1.5 1.5z' transform='translate(50,50) scale(1.2) rotate(25, 12, 12)'/%3E%3C/g%3E%3C/svg%3E")`,
-            backgroundSize: '120px 120px'
+            backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 100 100'%3E%3Cg fill='%232D5A47'%3E%3Cpath d='M 5.5 9.7 A 1.8 1.8 0 1 0 5.5 13.3 A 1.8 1.8 0 1 0 5.5 9.7 Z M 9.5 6.2 A 1.8 1.8 0 1 0 9.5 9.8 A 1.8 1.8 0 1 0 9.5 6.2 Z M 14.5 6.2 A 1.8 1.8 0 1 0 14.5 9.8 A 1.8 1.8 0 1 0 14.5 6.2 Z M 18.5 9.7 A 1.8 1.8 0 1 0 18.5 13.3 A 1.8 1.8 0 1 0 18.5 9.7 Z M 12 12 C 9 12 6.5 14 6.5 17.5 C 6.5 20 8.5 21 10.5 21 C 11.5 21 12 20.5 12 20.5 C 12 20.5 12.5 21 13.5 21 C 15.5 21 17.5 20 17.5 17.5 C 17.5 14 15 12 12 12 Z' transform='translate(10,10) scale(1.6)'/%3E%3Cpath d='M 5.5 9.7 A 1.8 1.8 0 1 0 5.5 13.3 A 1.8 1.8 0 1 0 5.5 9.7 Z M 9.5 6.2 A 1.8 1.8 0 1 0 9.5 9.8 A 1.8 1.8 0 1 0 9.5 6.2 Z M 14.5 6.2 A 1.8 1.8 0 1 0 14.5 9.8 A 1.8 1.8 0 1 0 14.5 6.2 Z M 18.5 9.7 A 1.8 1.8 0 1 0 18.5 13.3 A 1.8 1.8 0 1 0 18.5 9.7 Z M 12 12 C 9 12 6.5 14 6.5 17.5 C 6.5 20 8.5 21 10.5 21 C 11.5 21 12 20.5 12 20.5 C 12 20.5 12.5 21 13.5 21 C 15.5 21 17.5 20 17.5 17.5 C 17.5 14 15 12 12 12 Z' transform='translate(50,50) scale(1.2) rotate(25, 12, 12)'/%3E%3C/g%3E%3C/svg%3E")`,
+            backgroundSize: '160px 160px'
           }}
         />
         {/* Large accent floating paw prints */}
-        <div className="absolute top-12 left-8 text-brand-primary/5 select-none pointer-events-none -z-20 animate-pulse duration-[5000ms]">
+        <div className="absolute top-12 left-8 text-brand-primary/10 select-none pointer-events-none -z-20 animate-pulse duration-[5000ms]">
           <svg viewBox="0 0 24 24" fill="currentColor" className="w-20 h-20 rotate-12">
-            <path d="M12 14c1.66 0 3-1.34 3-3S13.66 8 12 8s-3 1.34-3 3 1.34 3 3 3zm-4.5-3c.83 0 1.5-.67 1.5-1.5S8.33 8 7.5 8 6 8.67 6 9.5 6.67 11 7.5 11zm9 0c.83 0 1.5-.67 1.5-1.5S17.33 8 16.5 8s-1.5.67-1.5 1.5.67 1.5 1.5 1.5zm-11 4.5c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5-1.5.67-1.5 1.5.67 1.5 1.5 1.5zm13 0c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5-1.5.67-1.5 1.5.67 1.5 1.5 1.5z" />
+            <path d="M 5.5 9.7 A 1.8 1.8 0 1 0 5.5 13.3 A 1.8 1.8 0 1 0 5.5 9.7 Z M 9.5 6.2 A 1.8 1.8 0 1 0 9.5 9.8 A 1.8 1.8 0 1 0 9.5 6.2 Z M 14.5 6.2 A 1.8 1.8 0 1 0 14.5 9.8 A 1.8 1.8 0 1 0 14.5 6.2 Z M 18.5 9.7 A 1.8 1.8 0 1 0 18.5 13.3 A 1.8 1.8 0 1 0 18.5 9.7 Z M 12 12 C 9 12 6.5 14 6.5 17.5 C 6.5 20 8.5 21 10.5 21 C 11.5 21 12 20.5 12 20.5 C 12 20.5 12.5 21 13.5 21 C 15.5 21 17.5 20 17.5 17.5 C 17.5 14 15 12 12 12 Z" />
           </svg>
         </div>
-        <div className="absolute bottom-6 left-1/3 text-brand-primary/5 select-none pointer-events-none -z-20 rotate-45 animate-pulse duration-[8000ms]">
+        <div className="absolute bottom-6 left-1/3 text-brand-primary/8 select-none pointer-events-none -z-20 rotate-45 animate-pulse duration-[8000ms]">
           <svg viewBox="0 0 24 24" fill="currentColor" className="w-16 h-16">
-            <path d="M12 14c1.66 0 3-1.34 3-3S13.66 8 12 8s-3 1.34-3 3 1.34 3 3 3zm-4.5-3c.83 0 1.5-.67 1.5-1.5S8.33 8 7.5 8 6 8.67 6 9.5 6.67 11 7.5 11zm9 0c.83 0 1.5-.67 1.5-1.5S17.33 8 16.5 8s-1.5.67-1.5 1.5.67 1.5 1.5 1.5zm-11 4.5c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5-1.5.67-1.5 1.5.67 1.5 1.5 1.5zm13 0c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5-1.5.67-1.5 1.5.67 1.5 1.5 1.5z" />
+            <path d="M 5.5 9.7 A 1.8 1.8 0 1 0 5.5 13.3 A 1.8 1.8 0 1 0 5.5 9.7 Z M 9.5 6.2 A 1.8 1.8 0 1 0 9.5 9.8 A 1.8 1.8 0 1 0 9.5 6.2 Z M 14.5 6.2 A 1.8 1.8 0 1 0 14.5 9.8 A 1.8 1.8 0 1 0 14.5 6.2 Z M 18.5 9.7 A 1.8 1.8 0 1 0 18.5 13.3 A 1.8 1.8 0 1 0 18.5 9.7 Z M 12 12 C 9 12 6.5 14 6.5 17.5 C 6.5 20 8.5 21 10.5 21 C 11.5 21 12 20.5 12 20.5 C 12 20.5 12.5 21 13.5 21 C 15.5 21 17.5 20 17.5 17.5 C 17.5 14 15 12 12 12 Z" />
           </svg>
         </div>
         
@@ -34,25 +34,22 @@ export default function Home() {
           {/* Text Content */}
           <div className="lg:col-span-7 space-y-8">
             <div className="space-y-4 md:space-y-6">
-              <div className="flex flex-wrap items-center gap-3">
-                <span className="font-display text-4xl sm:text-5xl md:text-6xl font-extrabold text-brand-dark tracking-tight leading-none">
-                  Get Your
-                </span>
-                <div className="inline-flex items-center gap-2 rounded-full bg-brand-soft/50 border border-brand-primary/10 px-4 py-2 shadow-sm">
-                  <div className="relative h-7 w-7 overflow-hidden rounded-full border border-white">
-                    <Image
-                      src="/images/badge_beagle.png"
-                      alt="Happy Beagle Badge"
-                      fill
-                      className="object-cover scale-110"
-                    />
-                  </div>
-                  <span className="text-[10px] font-extrabold uppercase tracking-widest text-brand-primary">Best Friend</span>
+              {/* Kicker Tag / Badge */}
+              <div className="inline-flex items-center gap-2 rounded-full bg-brand-soft/50 border border-brand-primary/10 px-4 py-2 shadow-sm w-fit">
+                <div className="relative h-7 w-7 overflow-hidden rounded-full border border-white">
+                  <Image
+                    src="/images/badge_beagle.png"
+                    alt="Happy Beagle Badge"
+                    fill
+                    className="object-cover scale-110"
+                  />
                 </div>
+                <span className="text-[10px] font-extrabold uppercase tracking-widest text-brand-primary">Best Friend</span>
               </div>
 
+              {/* Main Heading */}
               <h1 className="font-display text-5xl sm:text-6xl md:text-7xl font-black text-brand-dark leading-[1.04] tracking-tight">
-                Furry Family <br className="hidden sm:inline" />
+                Get Your Furry Family <br className="hidden sm:inline" />
                 Member <span className="text-brand-primary font-bold">Groomed Today</span>
               </h1>
             </div>
@@ -107,9 +104,9 @@ export default function Home() {
             <div className="absolute inset-y-0 -right-24 left-10 md:left-20 bg-brand-soft/30 -skew-x-6 rounded-l-[4rem] -z-10" />
             
             {/* Floating background decorative paw print */}
-            <div className="absolute top-10 right-10 text-brand-primary/15 opacity-40 select-none pointer-events-none animate-bounce duration-[4000ms]">
+            <div className="absolute top-10 right-10 text-brand-primary/20 opacity-60 select-none pointer-events-none animate-bounce duration-[4000ms]">
               <svg viewBox="0 0 24 24" fill="currentColor" className="w-12 h-12">
-                <path d="M12 14c1.66 0 3-1.34 3-3S13.66 8 12 8s-3 1.34-3 3 1.34 3 3 3zm-4.5-3c.83 0 1.5-.67 1.5-1.5S8.33 8 7.5 8 6 8.67 6 9.5 6.67 11 7.5 11zm9 0c.83 0 1.5-.67 1.5-1.5S17.33 8 16.5 8s-1.5.67-1.5 1.5.67 1.5 1.5 1.5zm-11 4.5c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5-1.5.67-1.5 1.5.67 1.5 1.5 1.5zm13 0c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5-1.5.67-1.5 1.5.67 1.5 1.5 1.5z" />
+                <path d="M 5.5 9.7 A 1.8 1.8 0 1 0 5.5 13.3 A 1.8 1.8 0 1 0 5.5 9.7 Z M 9.5 6.2 A 1.8 1.8 0 1 0 9.5 9.8 A 1.8 1.8 0 1 0 9.5 6.2 Z M 14.5 6.2 A 1.8 1.8 0 1 0 14.5 9.8 A 1.8 1.8 0 1 0 14.5 6.2 Z M 18.5 9.7 A 1.8 1.8 0 1 0 18.5 13.3 A 1.8 1.8 0 1 0 18.5 9.7 Z M 12 12 C 9 12 6.5 14 6.5 17.5 C 6.5 20 8.5 21 10.5 21 C 11.5 21 12 20.5 12 20.5 C 12 20.5 12.5 21 13.5 21 C 15.5 21 17.5 20 17.5 17.5 C 17.5 14 15 12 12 12 Z" />
               </svg>
             </div>
 
