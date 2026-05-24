@@ -28,95 +28,84 @@ export default function Home() {
         />
 
         {/* Hero Content Wrapper */}
-        <div className="max-w-7xl mx-auto px-4 md:px-8 relative">
-          {/* Large accent floating paw prints */}
-          <div className="absolute top-12 left-8 text-brand-primary/[0.04] select-none pointer-events-none -z-20 animate-pulse duration-[5000ms]">
-            <svg viewBox="0 0 24 24" fill="currentColor" className="w-20 h-20 rotate-12">
-              <path d="M 5.5 9.7 A 1.8 1.8 0 1 0 5.5 13.3 A 1.8 1.8 0 1 0 5.5 9.7 Z M 9.5 6.2 A 1.8 1.8 0 1 0 9.5 9.8 A 1.8 1.8 0 1 0 9.5 6.2 Z M 14.5 6.2 A 1.8 1.8 0 1 0 14.5 9.8 A 1.8 1.8 0 1 0 14.5 6.2 Z M 18.5 9.7 A 1.8 1.8 0 1 0 18.5 13.3 A 1.8 1.8 0 1 0 18.5 9.7 Z M 12 12 C 9 12 6.5 14 6.5 17.5 C 6.5 20 8.5 21 10.5 21 C 11.5 21 12 20.5 12 20.5 C 12 20.5 12.5 21 13.5 21 C 15.5 21 17.5 20 17.5 17.5 C 17.5 14 15 12 12 12 Z" />
-            </svg>
-          </div>
-          <div className="absolute bottom-6 left-1/3 text-brand-primary/[0.03] select-none pointer-events-none -z-20 rotate-45 animate-pulse duration-[8000ms]">
-            <svg viewBox="0 0 24 24" fill="currentColor" className="w-16 h-16">
-              <path d="M 5.5 9.7 A 1.8 1.8 0 1 0 5.5 13.3 A 1.8 1.8 0 1 0 5.5 9.7 Z M 9.5 6.2 A 1.8 1.8 0 1 0 9.5 9.8 A 1.8 1.8 0 1 0 9.5 6.2 Z M 14.5 6.2 A 1.8 1.8 0 1 0 14.5 9.8 A 1.8 1.8 0 1 0 14.5 6.2 Z M 18.5 9.7 A 1.8 1.8 0 1 0 18.5 13.3 A 1.8 1.8 0 1 0 18.5 9.7 Z M 12 12 C 9 12 6.5 14 6.5 17.5 C 6.5 20 8.5 21 10.5 21 C 11.5 21 12 20.5 12 20.5 C 12 20.5 12.5 21 13.5 21 C 15.5 21 17.5 20 17.5 17.5 C 17.5 14 15 12 12 12 Z" />
-            </svg>
-          </div>
+        <div className="max-w-7xl mx-auto px-4 md:px-8 relative py-8 md:py-16 flex flex-col items-center justify-center text-center">
+          {/* Centered large background circles borders (like the orange outlines in the screenshot) */}
+          <div className="absolute top-[-25%] left-[-15%] w-[80vw] h-[80vw] md:w-[50vw] md:h-[50vw] border border-brand-secondary/15 rounded-full pointer-events-none -z-10" />
+          <div className="absolute bottom-[-15%] right-[-15%] w-[80vw] h-[80vw] md:w-[55vw] md:h-[55vw] border border-brand-secondary/15 rounded-full pointer-events-none -z-10" />
           
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
-            {/* Text Content */}
-            <div className="lg:col-span-7 space-y-8">
-              {/* Main Heading */}
-              <h1 className="font-display text-5xl sm:text-6xl md:text-7xl font-black text-brand-dark leading-[1.04] tracking-tight">
-                Get Your Furry Family <br className="hidden sm:inline" />
-                Member <span className="text-brand-primary font-bold">Groomed Today</span>
+          {/* Handwritten-style script kicker at the top */}
+          <span className="font-serif italic text-lg sm:text-xl md:text-2xl text-brand-secondary mb-2 sm:mb-4 tracking-wide transform -rotate-1 select-none block">
+            we are waiting for you
+          </span>
+
+          {/* Centered Grid with Dog sandwiched between layout headings */}
+          <div className="relative w-full flex flex-col items-center justify-center min-h-[380px] md:min-h-[480px]">
+            {/* The layered heading text wrapping around/behind the dog */}
+            <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-4 w-full">
+              {/* Left Wing Heading */}
+              <h1 className="font-display text-5xl sm:text-7xl md:text-[5.5rem] lg:text-[6.5rem] font-black text-brand-dark tracking-tight leading-none text-center md:text-right max-w-sm md:max-w-none">
+                Still thinking
               </h1>
 
-            <p className="text-sm md:text-base text-brand-dark-muted leading-relaxed max-w-xl">
-              Experience the ultimate cage-free sanctuary for your pet. At Bark & Bathe Lounge, we replace stress and anxiety with calming lavender aromatherapy, whisper-quiet machinery, and 100% organic botanical spa treatments.
-            </p>
-
-            {/* CTA Actions */}
-            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
-              <Link
-                href="/book"
-                className="flex items-center justify-center gap-2 rounded-full bg-brand-primary px-10 py-4.5 text-sm font-extrabold uppercase tracking-widest text-brand-cream hover:bg-brand-primary-hover hover:scale-105 active:scale-95 shadow-lg shadow-brand-primary/15 transition-all duration-300 cursor-pointer"
-              >
-                <span>Book Now</span>
-              </Link>
-              <Link
-                href="tel:+123456789"
-                className="flex items-center justify-center gap-3 rounded-full bg-transparent border border-brand-primary/10 px-8 py-4.5 text-sm font-extrabold uppercase tracking-widest text-brand-primary hover:bg-brand-soft/20 hover:scale-105 active:scale-95 transition-all duration-300 cursor-pointer"
-              >
-                <Phone size={16} className="text-brand-primary shrink-0" />
-                <span>Schedule a call</span>
-              </Link>
-            </div>
-
-            {/* Quality Badges */}
-            <div className="grid grid-cols-3 gap-4 pt-6 border-t border-brand-primary/10 max-w-lg">
-              <div className="flex flex-col">
-                <span className="font-display text-2xl font-extrabold text-brand-primary">100%</span>
-                <span className="text-[10px] font-bold uppercase tracking-wider text-brand-dark-muted mt-1">
-                  Cage-Free Comfort
-                </span>
-              </div>
-              <div className="flex flex-col">
-                <span className="font-display text-2xl font-extrabold text-brand-primary">4.9★</span>
-                <span className="text-[10px] font-bold uppercase tracking-wider text-brand-dark-muted mt-1">
-                  Client Rating
-                </span>
-              </div>
-              <div className="flex flex-col">
-                <span className="font-display text-2xl font-extrabold text-brand-primary">Elite</span>
-                <span className="text-[10px] font-bold uppercase tracking-wider text-brand-dark-muted mt-1">
-                  Fear-Free Certified
-                </span>
-              </div>
-            </div>
-          </div>
-
-            {/* Hero Image */}
-            <div className="lg:col-span-5 relative flex justify-center items-center mt-8 lg:mt-0">
-              {/* Soft modern glowing background accent */}
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[110%] h-[110%] bg-brand-soft/30 rounded-full blur-3xl -z-10" />
-              
-              {/* Floating background decorative paw print */}
-              <div className="absolute top-10 right-10 text-brand-primary/20 opacity-60 select-none pointer-events-none animate-bounce duration-[4000ms]">
-                <svg viewBox="0 0 24 24" fill="currentColor" className="w-12 h-12">
-                  <path d="M 5.5 9.7 A 1.8 1.8 0 1 0 5.5 13.3 A 1.8 1.8 0 1 0 5.5 9.7 Z M 9.5 6.2 A 1.8 1.8 0 1 0 9.5 9.8 A 1.8 1.8 0 1 0 9.5 6.2 Z M 14.5 6.2 A 1.8 1.8 0 1 0 14.5 9.8 A 1.8 1.8 0 1 0 14.5 6.2 Z M 18.5 9.7 A 1.8 1.8 0 1 0 18.5 13.3 A 1.8 1.8 0 1 0 18.5 9.7 Z M 12 12 C 9 12 6.5 14 6.5 17.5 C 6.5 20 8.5 21 10.5 21 C 11.5 21 12 20.5 12 20.5 C 12 20.5 12.5 21 13.5 21 C 15.5 21 17.5 20 17.5 17.5 C 17.5 14 15 12 12 12 Z" />
-                </svg>
-              </div>
-
-              {/* Hero image container */}
-              <div className="relative w-full aspect-square md:max-w-md lg:max-w-none transition-transform duration-500 hover:scale-[1.02]">
+              {/* Central Dog Image with a glowing background accent */}
+              <div className="relative z-10 w-full max-w-[280px] sm:max-w-[320px] md:max-w-[360px] aspect-square flex justify-center items-center transform transition-transform duration-500 hover:scale-[1.03] my-4 md:my-0">
+                {/* Soft modern glowing background spotlight behind the dog */}
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[85%] h-[85%] bg-brand-soft/45 rounded-full blur-3xl -z-10" />
                 <Image
                   src="/images/hero_dog_sunglasses_left.png"
                   alt="Beautifully groomed happy golden retriever wearing yellow sunglasses at Bark & Bathe Lounge"
-                  width={600}
-                  height={600}
+                  width={500}
+                  height={500}
                   priority
-                  className="w-full h-auto object-contain drop-shadow-2xl"
+                  className="w-full h-auto object-contain drop-shadow-[0_20px_50px_rgba(45,90,71,0.22)]"
                 />
               </div>
+
+              {/* Right Wing Heading */}
+              <h1 className="font-display text-5xl sm:text-7xl md:text-[5.5rem] lg:text-[6.5rem] font-black text-brand-dark tracking-tight leading-none text-center md:text-left max-w-sm md:max-w-none flex items-center justify-center md:justify-start gap-1">
+                <span>about</span>
+                <span className="relative text-brand-primary">
+                  me
+                  <span className="text-brand-secondary font-black absolute -right-6 sm:-right-8 md:-right-10 top-0 select-none animate-bounce duration-[3000ms]">?</span>
+                </span>
+              </h1>
+            </div>
+          </div>
+
+          {/* Subheading / Description */}
+          <p className="text-xs sm:text-sm md:text-base text-brand-dark-muted max-w-xl mx-auto leading-relaxed mt-8 z-20">
+            Experience the ultimate cage-free sanctuary for your pet. At Bark & Bathe Lounge, we replace stress and anxiety with calming lavender aromatherapy, whisper-quiet machinery, and 100% organic botanical spa treatments.
+          </p>
+
+          {/* CTA Actions */}
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-4 pt-6 z-20 w-full max-w-md mx-auto">
+            <Link
+              href="/book"
+              className="flex items-center justify-center gap-2 rounded-xl bg-brand-secondary px-10 py-4.5 text-xs sm:text-sm font-extrabold uppercase tracking-widest text-brand-cream hover:bg-brand-secondary-hover hover:scale-102 active:scale-98 shadow-xl shadow-brand-secondary/20 transition-all duration-300 cursor-pointer w-full text-center"
+            >
+              <span>Bring Me To Your Home</span>
+            </Link>
+          </div>
+
+          {/* Quality Badges */}
+          <div className="grid grid-cols-3 gap-6 pt-10 border-t border-brand-primary/10 max-w-2xl mx-auto w-full text-center mt-12 z-20">
+            <div className="flex flex-col">
+              <span className="font-display text-2xl sm:text-3xl font-extrabold text-brand-primary">100%</span>
+              <span className="text-[9px] sm:text-[10px] font-bold uppercase tracking-widest text-brand-dark-muted mt-1">
+                Cage-Free Comfort
+              </span>
+            </div>
+            <div className="flex flex-col">
+              <span className="font-display text-2xl sm:text-3xl font-extrabold text-brand-primary">4.9★</span>
+              <span className="text-[9px] sm:text-[10px] font-bold uppercase tracking-widest text-brand-dark-muted mt-1">
+                Client Rating
+              </span>
+            </div>
+            <div className="flex flex-col">
+              <span className="font-display text-2xl sm:text-3xl font-extrabold text-brand-primary">Elite</span>
+              <span className="text-[9px] sm:text-[10px] font-bold uppercase tracking-widest text-brand-dark-muted mt-1">
+                Fear-Free Certified
+              </span>
             </div>
           </div>
         </div>
