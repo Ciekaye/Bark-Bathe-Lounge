@@ -40,6 +40,9 @@ export default function Home() {
 
           {/* Centered Grid with Dog sandwiched between layout headings */}
           <div className="relative w-full flex flex-col items-center justify-center min-h-[380px] md:min-h-[480px]">
+            {/* Green glow — BEHIND everything (text + corgi) */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[55%] h-[70%] bg-brand-soft/45 rounded-full blur-3xl z-0 pointer-events-none" />
+
             <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-0 w-full">
               {/* Left Heading — BEHIND the corgi */}
               <h1 className="font-display text-5xl sm:text-7xl md:text-[5.5rem] lg:text-[6.5rem] font-black text-brand-dark tracking-tight leading-none text-center md:text-right max-w-sm md:max-w-none relative z-10 md:-mr-20 lg:-mr-28">
@@ -48,9 +51,6 @@ export default function Home() {
 
               {/* Corgi Image — ON TOP of everything */}
               <div className="relative z-20 w-full max-w-[320px] sm:max-w-[380px] md:max-w-[440px] lg:max-w-[480px] aspect-square flex justify-center items-center transform transition-transform duration-500 hover:scale-[1.03] my-4 md:my-0">
-                {/* Green glow — BEHIND the text */}
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[85%] h-[85%] bg-brand-soft/45 rounded-full blur-3xl z-0" />
-                
                 {/* Floor contact shadow */}
                 <div className="absolute bottom-[4px] left-1/2 -translate-x-1/2 w-[72%] h-[12px] bg-brand-dark/25 rounded-full blur-[6px] z-0" />
                 
@@ -65,7 +65,7 @@ export default function Home() {
               </div>
 
               {/* Right Heading — BEHIND the corgi */}
-              <h1 className="font-display text-5xl sm:text-7xl md:text-[5.5rem] lg:text-[6.5rem] font-black text-brand-dark tracking-tight leading-none text-center md:text-left max-w-sm md:max-w-none flex items-center justify-center md:justify-start gap-1 relative z-10 md:-ml-20 lg:-ml-28">
+              <h1 className="font-display text-5xl sm:text-7xl md:text-[5.5rem] lg:text-[6.5rem] font-black text-brand-dark tracking-tight leading-none text-center md:text-left max-w-sm md:max-w-none flex items-center justify-center md:justify-start gap-1 relative z-10 md:-ml-10 lg:-ml-16">
                 <span>about</span>
                 <span className="relative text-brand-primary">
                   me
