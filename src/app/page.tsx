@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className="space-y-24 md:space-y-32">
       {/* 1. Hero Section */}
-      <section className="relative overflow-hidden w-full bg-white pt-2 md:pt-4 pb-6">
+      <section className="relative overflow-hidden w-full bg-white pt-6 md:pt-10 pb-6">
         {/* Floating and Repeating Background Paw Pattern */}
         {/* Floating and Repeating Background Paw Pattern */}
         <div 
