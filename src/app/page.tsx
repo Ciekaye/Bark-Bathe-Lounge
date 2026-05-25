@@ -43,7 +43,7 @@ export default function Home() {
             {/* The layered heading text wrapping around the dog — text in FRONT */}
             <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-0 w-full">
               {/* Left Wing Heading */}
-              <h1 className="font-display text-5xl sm:text-7xl md:text-[5.5rem] lg:text-[6.5rem] font-black text-brand-dark tracking-tight leading-none text-center md:text-right max-w-sm md:max-w-none relative z-20 md:-translate-y-8 lg:-translate-y-10 md:-mr-6 lg:-mr-8">
+              <h1 className="font-display text-5xl sm:text-7xl md:text-[5.5rem] lg:text-[6.5rem] font-black text-brand-dark tracking-tight leading-none text-center md:text-right max-w-sm md:max-w-none relative z-20 md:-mr-10 lg:-mr-14">
                 Still thinking
               </h1>
 
