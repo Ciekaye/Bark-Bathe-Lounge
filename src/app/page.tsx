@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className="space-y-24 md:space-y-32">
       {/* 1. Hero Section */}
-      <section className="relative overflow-hidden w-full bg-white pt-8 md:pt-16 pb-6">
+      <section className="relative overflow-hidden w-full bg-white pt-2 md:pt-4 pb-6">
         {/* Floating and Repeating Background Paw Pattern */}
         {/* Floating and Repeating Background Paw Pattern */}
         <div 
@@ -28,16 +28,11 @@ export default function Home() {
         />
 
         {/* Hero Content Wrapper */}
-        <div className="max-w-7xl mx-auto px-4 md:px-8 relative py-8 md:py-16 flex flex-col items-center justify-center text-center">
+        <div className="max-w-7xl mx-auto px-4 md:px-8 relative pt-2 pb-8 md:pt-4 md:pb-16 flex flex-col items-center justify-center text-center">
           {/* Centered large background circles borders (like the orange outlines in the screenshot) */}
           <div className="absolute top-[-25%] left-[-15%] w-[80vw] h-[80vw] md:w-[50vw] md:h-[50vw] border border-brand-secondary/15 rounded-full pointer-events-none -z-10" />
           <div className="absolute bottom-[-15%] right-[-15%] w-[80vw] h-[80vw] md:w-[55vw] md:h-[55vw] border border-brand-secondary/15 rounded-full pointer-events-none -z-10" />
           
-          {/* Handwritten-style script kicker at the top */}
-          <span className="font-serif italic text-lg sm:text-xl md:text-2xl text-brand-secondary mb-2 sm:mb-4 tracking-wide transform -rotate-1 select-none block">
-            we are waiting for you
-          </span>
-
           {/* Centered Grid with Dog sandwiched between layout headings */}
           <div className="relative w-full flex flex-col items-center justify-center min-h-[380px] md:min-h-[480px]">
             {/* Green glow — BEHIND everything (text + corgi) */}
@@ -45,7 +40,7 @@ export default function Home() {
 
             <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-0 w-full">
               {/* Left Heading — BEHIND the corgi */}
-              <h1 className="font-display text-5xl sm:text-7xl md:text-[5.5rem] lg:text-[6.5rem] font-black text-brand-dark tracking-tight leading-none text-center md:text-right max-w-sm md:max-w-none relative z-10 md:-mr-20 lg:-mr-28">
+              <h1 className="font-display text-5xl sm:text-7xl md:text-[5.5rem] lg:text-[6.5rem] font-black text-brand-dark tracking-tight leading-none text-center md:text-right max-w-sm md:max-w-none relative z-10 md:-mr-28 lg:-mr-40">
                 Still thinking
               </h1>
 
