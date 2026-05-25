@@ -41,21 +41,25 @@ export default function Home() {
           {/* Centered Grid with Dog sandwiched between layout headings */}
           <div className="relative w-full flex flex-col items-center justify-center min-h-[380px] md:min-h-[480px]">
             {/* The layered heading text wrapping around/behind the dog */}
-            <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-4 w-full">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-0 w-full">
               {/* Left Wing Heading */}
               <h1 className="font-display text-5xl sm:text-7xl md:text-[5.5rem] lg:text-[6.5rem] font-black text-brand-dark tracking-tight leading-none text-center md:text-right max-w-sm md:max-w-none">
                 Still thinking
               </h1>
 
               {/* Central Dog Image with a glowing background accent */}
-              <div className="relative z-10 w-full max-w-[280px] sm:max-w-[320px] md:max-w-[360px] aspect-square flex justify-center items-center transform transition-transform duration-500 hover:scale-[1.03] my-4 md:my-0">
+              <div className="relative z-10 w-full max-w-[320px] sm:max-w-[380px] md:max-w-[440px] lg:max-w-[480px] aspect-square flex justify-center items-center transform transition-transform duration-500 hover:scale-[1.03] my-4 md:my-0 md:-mx-16 lg:-mx-20 xl:-mx-24">
                 {/* Soft modern glowing background spotlight behind the dog */}
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[85%] h-[85%] bg-brand-soft/45 rounded-full blur-3xl -z-10" />
+                
+                {/* Realistic floor contact shadow under the corgi's paws and seat */}
+                <div className="absolute bottom-[4px] left-1/2 -translate-x-1/2 w-[72%] h-[12px] bg-brand-dark/25 rounded-full blur-[6px] -z-10" />
+                
                 <Image
                   src="/images/hero_corgi.png"
                   alt="Beautifully groomed happy Pembroke Welsh Corgi sitting at Bark & Bathe Lounge"
-                  width={500}
-                  height={500}
+                  width={600}
+                  height={600}
                   priority
                   className="w-full h-auto object-contain drop-shadow-[0_20px_50px_rgba(45,90,71,0.22)]"
                 />
