@@ -38,36 +38,42 @@ export default function Home() {
             we are waiting for you
           </span>
 
-          {/* Heading text row above the corgi */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 w-full">
-            <h1 className="font-display text-5xl sm:text-7xl md:text-[5.5rem] lg:text-[6.5rem] font-black text-brand-dark tracking-tight leading-none text-center">
-              Still thinking
-            </h1>
-            <h1 className="font-display text-5xl sm:text-7xl md:text-[5.5rem] lg:text-[6.5rem] font-black text-brand-dark tracking-tight leading-none text-center flex items-center justify-center gap-1">
-              <span>about</span>
-              <span className="relative text-brand-primary">
-                me
-                <span className="text-brand-secondary font-black absolute -right-6 sm:-right-8 md:-right-10 top-0 select-none animate-bounce duration-[3000ms]">?</span>
-              </span>
-            </h1>
-          </div>
+          {/* Centered Grid with Dog sandwiched between layout headings */}
+          <div className="relative w-full flex flex-col items-center justify-center min-h-[380px] md:min-h-[480px]">
+            {/* The layered heading text wrapping around the dog — text in FRONT */}
+            <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-0 w-full">
+              {/* Left Wing Heading */}
+              <h1 className="font-display text-5xl sm:text-7xl md:text-[5.5rem] lg:text-[6.5rem] font-black text-brand-dark tracking-tight leading-none text-center md:text-right max-w-sm md:max-w-none relative z-20">
+                Still thinking
+              </h1>
 
-          {/* Corgi image below the heading */}
-          <div className="relative w-full max-w-[320px] sm:max-w-[380px] md:max-w-[440px] lg:max-w-[480px] flex justify-center items-center transform transition-transform duration-500 hover:scale-[1.03] mt-4 md:mt-6 mx-auto">
-            {/* Soft modern glowing background spotlight behind the dog */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[85%] h-[85%] bg-brand-soft/45 rounded-full blur-3xl -z-10" />
-            
-            {/* Realistic floor contact shadow under the corgi's paws and seat */}
-            <div className="absolute bottom-[4px] left-1/2 -translate-x-1/2 w-[72%] h-[12px] bg-brand-dark/25 rounded-full blur-[6px] -z-10" />
-            
-            <Image
-              src="/images/hero_corgi.png"
-              alt="Beautifully groomed happy Pembroke Welsh Corgi sitting at Bark & Bathe Lounge"
-              width={600}
-              height={600}
-              priority
-              className="w-full h-auto object-contain drop-shadow-[0_20px_50px_rgba(45,90,71,0.22)]"
-            />
+              {/* Central Dog Image — sits behind the text */}
+              <div className="relative z-0 w-full max-w-[320px] sm:max-w-[380px] md:max-w-[440px] lg:max-w-[480px] aspect-square flex justify-center items-center transform transition-transform duration-500 hover:scale-[1.03] my-4 md:my-0 md:-mx-16 lg:-mx-20 xl:-mx-24">
+                {/* Soft modern glowing background spotlight behind the dog */}
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[85%] h-[85%] bg-brand-soft/45 rounded-full blur-3xl -z-10" />
+                
+                {/* Realistic floor contact shadow under the corgi's paws and seat */}
+                <div className="absolute bottom-[4px] left-1/2 -translate-x-1/2 w-[72%] h-[12px] bg-brand-dark/25 rounded-full blur-[6px] -z-10" />
+                
+                <Image
+                  src="/images/hero_corgi.png"
+                  alt="Beautifully groomed happy Pembroke Welsh Corgi sitting at Bark & Bathe Lounge"
+                  width={600}
+                  height={600}
+                  priority
+                  className="w-full h-auto object-contain drop-shadow-[0_20px_50px_rgba(45,90,71,0.22)]"
+                />
+              </div>
+
+              {/* Right Wing Heading */}
+              <h1 className="font-display text-5xl sm:text-7xl md:text-[5.5rem] lg:text-[6.5rem] font-black text-brand-dark tracking-tight leading-none text-center md:text-left max-w-sm md:max-w-none flex items-center justify-center md:justify-start gap-1 relative z-20">
+                <span>about</span>
+                <span className="relative text-brand-primary">
+                  me
+                  <span className="text-brand-secondary font-black absolute -right-6 sm:-right-8 md:-right-10 top-0 select-none animate-bounce duration-[3000ms]">?</span>
+                </span>
+              </h1>
+            </div>
           </div>
 
           {/* Subheading / Description */}
