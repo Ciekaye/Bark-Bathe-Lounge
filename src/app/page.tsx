@@ -43,12 +43,12 @@ export default function Home() {
             {/* The layered heading text wrapping around the dog — text in FRONT */}
             <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-0 w-full">
               {/* Left Wing Heading */}
-              <h1 className="font-display text-5xl sm:text-7xl md:text-[5.5rem] lg:text-[6.5rem] font-black text-brand-dark tracking-tight leading-none text-center md:text-right max-w-sm md:max-w-none relative z-20">
+              <h1 className="font-display text-5xl sm:text-7xl md:text-[5.5rem] lg:text-[6.5rem] font-black text-brand-dark tracking-tight leading-none text-center md:text-right max-w-sm md:max-w-none relative z-20 md:-translate-y-8 lg:-translate-y-10 md:-mr-6 lg:-mr-8">
                 Still thinking
               </h1>
 
               {/* Central Dog Image — sits behind the text */}
-              <div className="relative z-0 w-full max-w-[320px] sm:max-w-[380px] md:max-w-[440px] lg:max-w-[480px] aspect-square flex justify-center items-center transform transition-transform duration-500 hover:scale-[1.03] my-4 md:my-0 md:-mx-16 lg:-mx-20 xl:-mx-24">
+              <div className="relative z-0 w-full max-w-[320px] sm:max-w-[380px] md:max-w-[440px] lg:max-w-[480px] aspect-square flex justify-center items-center transform transition-transform duration-500 hover:scale-[1.03] my-4 md:my-0">
                 {/* Soft modern glowing background spotlight behind the dog */}
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[85%] h-[85%] bg-brand-soft/45 rounded-full blur-3xl -z-10" />
                 
