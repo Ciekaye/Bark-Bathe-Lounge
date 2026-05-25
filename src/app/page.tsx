@@ -52,8 +52,8 @@ export default function Home() {
                 {/* Soft modern glowing background spotlight behind the dog */}
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[85%] h-[85%] bg-brand-soft/45 rounded-full blur-3xl -z-10" />
                 <Image
-                  src="/images/hero_dog_sunglasses_left.png"
-                  alt="Beautifully groomed happy golden retriever wearing yellow sunglasses at Bark & Bathe Lounge"
+                  src="/images/hero_corgi.png"
+                  alt="Beautifully groomed happy Pembroke Welsh Corgi sitting at Bark & Bathe Lounge"
                   width={500}
                   height={500}
                   priority

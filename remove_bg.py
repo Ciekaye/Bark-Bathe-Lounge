@@ -66,6 +66,6 @@ def remove_background(img_path, output_path, threshold=240, feather_radius=1):
     print(f"Successfully removed background and saved to {output_path}")
 
 if __name__ == "__main__":
-    input_img = "/Users/clarkkentuyanguren/.gemini/antigravity-ide/brain/11628a28-c97b-402e-9c05-4591ed5f9fbc/dog_white_bg_1779665562452.png"
-    output_img = "/Users/clarkkentuyanguren/Documents/code-files/pet-grooming/public/images/hero_dog_sunglasses_left.png"
+    input_img = "/Users/clarkkentuyanguren/.gemini/antigravity-ide/brain/11628a28-c97b-402e-9c05-4591ed5f9fbc/media__1779667707276.png"
+    output_img = "/Users/clarkkentuyanguren/Documents/code-files/pet-grooming/public/images/hero_corgi.png"
     remove_background(input_img, output_img, threshold=245, feather_radius=1)
